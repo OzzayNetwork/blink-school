@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" href="vendors/material-design-iconic-font/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="vendors/animate.css/animate.min.css">
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/new-age.css">
+	    <link rel="stylesheet" href="css/login.css">
+    <!-- ICONS -->
+    <link rel="apple-touch-icon" sizes="76x76" href="~/login/img/county.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="~/login/img/county.png">
+
+</head>
+
+<body data-ma-theme="green">
+
+
+
+<body id="page-top" data-ma-theme="green">
+    <header class="masthead hide-overflow">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-12 my-auto">
+                    <div class="device-container light-box">
+                        <!-- Login -->
+                        <div class="login__block active p-0" id="l-login">
+                            <div class="login__block__header">
+                                
+                                <div class="actions actions--inverse login__bleock__actions">
+                                    <div class="dropdown">
+                                        <div class="dropdown-menu dropdown-menu-right"> <a class="dropdown-item" data-ma-action="login-switch" data-ma-target="#l-register" href="#">Create an account</a> <a class="dropdown-item" data-ma-action="login-switch" data-ma-target="#l-forget-password" href="#">Forgot password?</a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 px-3 pt-3 text-black">
+								<h3 class="text-black mt-3 px-4"><strong>Login</strong></h3>
+								<p class="px-4"><small>Input your account credentials to continue</small></p>
+							</div>
+                           	<form>
+								
+                                <div class="col-12 px-5 pt-5 pb-2">
+                                    <div class="wrap-input100 validate-input" data-validate="Name is required mb-3">
+                                        <span class="label-input100 pull-left w-100 text-left name-lable">Account Username</span>
+                                        <input id="email" type="text" class="input100  emaiil is-invalid" type="text" placeholder="Enter your username" name="email" required autocomplete="email" autofocus placeholder="Enter E-mail Address">
+                                        <span class="focus-input100 mb-3"></span>
+                                    </div>
+                                    <div class="wrap-input100 validate-input" data-validate="Valid password is required">
+                                        <span class="label-input100 pass-lable">Your Password</span>
+                                        <input id="password" class="input100 is-invalid" type="password" name="password" required autocomplete="current-password" placeholder="Enter your account password">
+                                        <span class="focus-input100"></span>
+                                    </div>
+                                </div>
+                                <div action="index.html" class="form-group row mb-0">
+                                    <div class="col-md-12 mb-0 pb-0 dropdown">
+                                        <button class="m-0 p-3 text-center drop-bottom w-100 mb-24rem mt-3 btn login-btn text-capitalize">
+											<a href="index.html" class="text-white">
+												LogIn<i data-feather="arrow-right" class="ml-3" id="login-btnk"></i>
+											</a>
+										</button>
+                                    </div>
+                                </div>
+                         
+							</form>
+                        </div>
+                    </div>
+                </div>
+                <!--				show this when there is an error-->
+               
+            </div>
+        </div>
+    </header>
+
+    <!-- Javascript -->
+    <!-- Vendors -->
+    <script src="~/login/vendor/jquery/jquery.min.js"></script>
+    <script src="~/login/vendor/popper.js/popper.min.js"></script>
+    <script src="~/login/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    
+    <!-- Bootstrap core JavaScript -->
+    <script src="~/login/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="~/login/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="~/login/js/new-age.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        feather.replace();
+    </script>
+    <script>
+        var d = new Date();
+
+        var month = d.getMonth() + 1;
+        var day = d.getDate();
+
+        var output = d.getFullYear() + '/' +
+            (month < 10 ? '0' : '') + month + '/' +
+            (day < 10 ? '0' : '') + day;
+
+
+        $(document).ready(function () {
+
+
+            $('.yeartxt').text(d.getFullYear());
+
+            $('.cancel-icon').on('click', function () {
+                fadealert();
+                console.log("clicked");
+            });
+
+            document.getElementsByClassName("kev-alert").style.display = "none";
+
+            function fadealert() {
+                $('.kev-alert').removeClass('slideInRight');
+                $('.kev-alert').addClass('lightSpeedOut');
+            }
+
+        });
+
+    </script>
+</body>
+</html>

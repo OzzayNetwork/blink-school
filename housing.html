@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- Mirrored from byrushan.com/projects/material-admin/app/2.6/data-table.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Jul 2019 11:35:05 GMT -->
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+		<!--icon fonts-->
+		 <link rel="stylesheet" href="css/icon_fonts/css/icon_set_1.css">
+		 <link rel="stylesheet" href="css/icon_fonts/css/icon_set_2.css">
+		 <link rel="stylesheet" href="css/icon_fonts/css/icon_set_3.css">
+		 <link rel="stylesheet" href="css/icon_fonts/css/icon_set_4.css">
+
+        <!-- Vendor styles -->
+        <link rel="stylesheet" href="vendors/material-design-iconic-font/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="vendors/animate.css/animate.min.css">
+        <link rel="stylesheet" href="vendors/jquery-scrollbar/jquery.scrollbar.css">
+        <link rel="stylesheet" href="vendors/fullcalendar/fullcalendar.min.css">
+        <link rel="stylesheet" href="vendors/select2/css/select2.min.css">
+        <link rel="stylesheet" href="vendors/dropzone/dropzone.css">
+        <link rel="stylesheet" href="vendors/nouislider/nouislider.min.css">
+        <link rel="stylesheet" href="vendors/trumbowyg/ui/trumbowyg.min.css">
+        <link rel="stylesheet" href="vendors/flatpickr/flatpickr.min.css" />
+        <link rel="stylesheet" href="vendors/rateyo/jquery.rateyo.min.css">
+        <link rel="stylesheet" href="vendors/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+	
+		
+
+        <!-- App styles -->
+        <link rel="stylesheet" href="css/app.min.css">
+    </head>
+
+    <body data-ma-theme="green">
+		<!--modals go here-->
+			<!-- Modal -->
+				<div class="modal fade" id="details-modal" tabindex="-1" role="dialog" aria-labelledby="details-modal" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+					  <div class="modal-header">
+						<h5 class="modal-title text-capitalize" id="exampleModalLongTitle">Property details</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						  <span aria-hidden="true">&times;</span>
+						</button>
+					  </div>
+					  <div class="modal-body">
+							<div class="modal-body-header pb-0">
+						  		 <h2>No. 4589T</h2>
+						  		<span class="badge badge-success">COMPLIANT</span>
+						  	</div>
+					  </div>
+						<div class="listview listview--striped">
+                            <div class="listview__item">
+                                <div class="listview__content">
+									<p>Property Owner</p>
+                                    <div class="listview__heading"><strong>John mutisia Kinhua</strong> ID Number <strong>254895698</strong></div>
+                                </div>
+                            </div>
+							
+							<div class="listview__item">
+                                <div class="listview__content">
+									<p>Payment rate</p>
+                                    <div class="listview__heading">Kes 2,589 Per Month</div>
+                                </div>
+                            </div>
+							
+							<div class="listview__item">
+                                <div class="listview__content">
+									<p>Most recent payment</p>
+                                    <div class="listview__heading"><strong>Kes 2,589</strong> on <strong>2-Mar-2020</strong></div>
+                                </div>
+                            </div>
+							
+							<div class="listview__item">
+                                <div class="listview__content">
+									<p>Outstanding arrears</p>
+                                    <div class="listview__heading">The owner has cleared all balances</div>
+                                </div>
+                            </div>
+							
+							<div class="listview__item">
+                                <div class="listview__content">
+									<p>Penalties</p>
+                                    <div class="listview__heading"><strong>Has no penalties</strong></div>
+                                </div>
+                            </div>
+							
+							<div class="listview__item">
+                                <div class="listview__content">
+									<p>Next payment billing date</p>
+                                    <div class="listview__heading">2 April 2020</div>
+                                </div>
+                            </div>
+                        </div>
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary d-none">Print details</button>
+					  </div>
+					</div>
+				  </div>
+				</div>
+		<!--modals go here-->
+        <main class="main">
+            <div class="page-loader">
+                <div class="page-loader__spinner">
+                    <svg viewBox="25 25 50 50">
+                        <circle cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+                    </svg>
+                </div>
+            </div>
+
+            <header class="header">
+                <div class="navigation-trigger hidden-xl-up" data-ma-action="aside-open" data-ma-target=".sidebar">
+                    <div class="navigation-trigger__inner">
+                        <i class="navigation-trigger__line"></i>
+                        <i class="navigation-trigger__line"></i>
+                        <i class="navigation-trigger__line"></i>
+                    </div>
+                </div>
+
+                <div class="header__logo hidden-sm-down">
+                    <h1><a href="index.html">RevenueSure Asset Manager</a></h1>
+                </div>
+
+                <form class="search d-none">
+                    <div class="search__inner">
+                        <input type="text" class="search__text" placeholder="Search for people, files, documents...">
+                        <i class="zmdi zmdi-search search__helper" data-ma-action="search-close"></i>
+                    </div>
+                </form>
+
+                
+            </header>
+
+            <aside class="sidebar">
+                <div class="scrollbar-inner">
+                    <div class="user">
+                        <div class="user__info" data-toggle="dropdown">
+                            <img class="user__img" src="demo/img/county.png" alt="">
+                            <div>
+                                <div class="user__name">John Mwakili</div>
+                                <div class="user__email">john@gmail.com</div>
+                            </div>
+                        </div>
+
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">View Profile</a>
+                            <a class="dropdown-item" href="#">Settings</a>
+                            <a class="dropdown-item" href="landing-page.html">Logout</a>
+                        </div>
+                    </div>
+
+                    <ul class="navigation">
+                        <li class="navigation__active"><a href="index.html"><i class="zmdi zmdi-view-dashboard"></i>Home</a></li>
+
+                        <li class="navigation__sub navigation__sub--toggled">
+                            <a href="#"><i class="zmdi zmdi-apps"></i>Revenue streams</a>
+
+                            <ul style="display: block;">
+                                <li><a href="all-revenue-streams.html">All Revenue streams</a></li>
+                                <li><a href="adverts.html">Adverts & signage</a></li>
+                                <li><a href="land-rates.html">Land rates</a></li>
+                                <li><a href="business.html">Businesses</a></li>
+                                <li  class="active-link"><a href="housing.html">Housing</a></li>
+                            </ul>
+                        </li>
+						
+						<li class="navigation__active"><a href="all-maps.html"><i class="zmdi zmdi-map "></i>Map View</a></li>
+
+						
+						 <li class="navigation__sub d-none">
+                            <a href="#"><i class="zmdi zmdi-accounts"></i>Systems Users</a>
+
+                            <ul>
+                                <li><a href="hidden-sidebar.html">Add a user</a></li>
+                                <li><a href="boxed-layout.html">Remove a user</a></li>
+                                <li><a href="hidden-sidebar-boxed-layout.html">View list of users</a></li>
+                                <li><a href="top-navigation.html">Add roles</a></li>
+                            </ul>
+                        </li>
+						 <li class="navigation__active mt-4"><a href="landing-page.html"><i class="zmdi zmdi-power"></i>Logout</a></li>
+
+
+                        
+
+                        
+                    </ul>
+                </div>
+            </aside>
+
+            <aside class="chat">
+                <div class="chat__header">
+                    <h2 class="chat__title">Chat <small>Currently 20 contacts online</small></h2>
+
+                    <div class="chat__search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search...">
+                            <i class="form-group__bar"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scrollbar-inner">
+                    <div class="listview listview--hover chat__buddies">
+                        <a class="listview__item chat__available">
+                            <img src="demo/img/profile-pics/7.jpg" class="listview__img" alt="">
+
+                            <div class="listview__content">
+                                <div class="listview__heading">Jeannette Lawson</div>
+                                <p>hey, how are you doing.</p>
+                            </div>
+                        </a>
+
+                        <a class="listview__item chat__available">
+                            <img src="demo/img/profile-pics/5.jpg" class="listview__img" alt="">
+
+                            <div class="listview__content">
+                                <div class="listview__heading">Jeannette Lawson</div>
+                                <p>hmm...</p>
+                            </div>
+                        </a>
+
+                        <a class="listview__item chat__away">
+                            <img src="demo/img/profile-pics/3.jpg" class="listview__img" alt="">
+
+                            <div class="listview__content">
+                                <div class="listview__heading">Jeannette Lawson</div>
+                                <p>all good</p>
+                            </div>
+                        </a>
+
+                        <a class="listview__item">
+                            <img src="demo/img/profile-pics/8.jpg" class="listview__img" alt="">
+
+                            <div class="listview__content">
+                                <div class="listview__heading">Jeannette Lawson</div>
+                                <p>morbi leo risus portaac consectetur vestibulum at eros.</p>
+                            </div>
+                        </a>
+
+                        <a class="listview__item">
+                            <img src="demo/img/profile-pics/6.jpg" class="listview__img" alt="">
+
+                            <div class="listview__content">
+                                <div class="listview__heading">Jeannette Lawson</div>
+                                <p>fusce dapibus</p>
+                            </div>
+                        </a>
+
+                        <a class="listview__item chat__busy">
+                            <img src="demo/img/profile-pics/9.jpg" class="listview__img" alt="">
+
+                            <div class="listview__content">
+                                <div class="listview__heading">Jeannette Lawson</div>
+                                <p>cras mattis consectetur purus sit amet fermentum.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="messages.html" class="btn btn--action btn-danger"><i class="zmdi zmdi-plus"></i></a>
+            </aside>
+
+            <section class="content">
+                <header class="content__title pl-0 border-0">
+					<div class="ranger-container">
+						<i class="icon-calendar-7"></i>
+						<input type="text" class="form-control date-range  table-ranger" id="date_ranger" placeholder="Select a date or date range" readonly="readonly"  onChange=" Expand(obj)" >
+					</div>
+
+                    <div class="actions d-none">
+                        <a href="#" class="actions__item zmdi zmdi-trending-up"></a>
+                        <a href="#" class="actions__item zmdi zmdi-check-all"></a>
+
+                        <div class="dropdown actions__item">
+                            <i data-toggle="dropdown" class="zmdi zmdi-more-vert"></i>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a href="#" class="dropdown-item">Refresh</a>
+                                <a href="#" class="dropdown-item">Manage Widgets</a>
+                                <a href="#" class="dropdown-item">Settings</a>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                
+                <div class="card">
+					<div class="card-header bg-gray-lighter">
+						<h4 class="card-title">House rentals</h4>
+                        <h6 class="card-subtitle">The table bellow shows data of revenue collections for <strong>House rents</strong> for the date(s) <strong class="date-range-text">March 26 2020</strong></h6>
+						
+						<div class="row">
+                            <div class="col gauge-cont">
+                                <div class="gauge">
+                                    <div id="gauge01" style="margin: 0 auto;width:100%"></div>
+                                </div>
+                                <h6><strong>Revenue Collection Percentage(%) comparison to expectation</strong></h6>
+
+                                
+                            </div>
+                            <div class="listview listview--inverse d-flex flex-wrap col">
+                                <div class="listview__item pl-0">
+                                    <i class="icon-money-2"></i>
+                                    <div class="widget-past-days__info">
+                                        <small>Revenue Collected</small>
+                                        <h3>58,778</h3>
+                                    </div>
+                                </div>
+    
+                                <div class="listview__item">
+                                    <i class="zmdi zmdi-money-off"></i>
+                                    <div class="widget-past-days__info">
+                                        <small>Projected Revenue</small>
+                                        <h3>320,450</h3>
+                                    </div>
+                                </div>
+                                
+                                 <div class="listview__item">
+                                    <i class="zmdi zmdi-layers"></i>
+                                    <div class="widget-past-days__info">
+                                        <small>All County rentals </small>
+                                        <h3>62,589</h3>
+                                    </div>
+                                </div>
+                                
+                                <div class="listview__item">
+                                    <i class="ti-flag"></i>
+                                    <div class="widget-past-days__info">
+                                        <small>Uncompliant Businesses</small>
+                                        <h3>32</h3>
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+						
+						
+					</div>
+					<ul class="nav nav-tabs mt-5 ">
+                                <li class="nav-item pl-5">
+                                    <a class="nav-link active show-all" href="#">All houses</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link show-compliant" href="#">Compliant houses</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link show-uncompliant" href="#">Uncompliant houses</a>
+                                </li>
+								<li class="nav-item">
+                                    <a class="nav-link show-penalty" href="#">Penalized houses</a>
+                                </li>
+                            </ul>
+                    <div class="card-body"> 
+						
+					<!--all data tables-->
+						<div class="table-all animated slideInRight">
+							<div class="table-responsive">
+                            <table id="data-table" class="table table-striped table-hover">
+                                <thead class="thead-default">
+                                    <tr>
+                                        <th>No. </th>
+                                        <th>House owner</th>
+                                        <th>Sub county</th>
+                                        <th>Ward</th>
+										<th>Rate</th>
+										<th>Penalty</th>
+										<th>Payment status</th>
+                                        <th>Last paid</th>
+                                        <th>Amount paid</th>
+                                        <th>amount due</th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                       <th>No.</th>
+                                        <th>House owner</th>
+                                        <th>Sub county</th>
+                                        <th>Ward</th>
+										<th>Rate</th>
+										<th>Penalty</th>
+										<th>Payment status</th>
+                                        <th>Last paid</th>
+                                        <th>Amount paid</th>
+                                        <th>amount due</th>
+                                    </tr>
+                                </tfoot>
+                                <tbody>
+                                    <tr>
+                                        <td><strong data-toggle="modal" data-target="#details-modal" title="view more details">ASE 456</strong></td>
+                                        <td>John Doe Mwikali</td>
+                                        <td>Mavoko</td>
+                                        <td>Kinanie</td>
+                                        <td>2,589</td>
+                                        <td>3,56</td>
+                                        <td><span class="badge badge-danger">Uncleared balances</span></td>
+                                        <td>2-Oct-2018</td>
+                                        <td>2,000</td>
+                                        <td>589</td>
+                                    </tr>
+									 <tr>
+                                        <td><strong data-toggle="modal" data-target="#details-modal" title="view more details">ASE 456</strong></td>
+                                        <td>John Doe Mwikali</td>
+                                        <td>Mavoko</td>
+                                        <td>Kinanie</td>
+                                        <td>2,589</td>
+                                        <td>000</td>
+										 <td><span class="badge badge-success">compliant</span></td>
+                                        <td>2-Oct-2018</td>
+                                        <td>2,000</td>
+                                        <td>000</td>
+									</tr>
+                                </tbody>
+                            </table>
+                        </div>
+						</div>
+					<!--all data tables-->
+						
+					<!--compliant data tables-->
+						<div class="table-compliant d-none animated slideInRight">
+							<div class="table-responsive">
+                            <table id="compliant-table" class="table table-striped table-hover">
+                                <thead class="thead-default">
+                                    <tr>
+                                        <th>No. </th>
+                                        <th>House owner</th>
+                                        <th>Sub county</th>
+                                        <th>Ward</th>
+										<th>Rate</th>
+										<th>Penalty</th>
+										<th>Payment status</th>
+                                        <th>Last paid</th>
+                                        <th>Amount paid</th>
+                                        <th>amount due</th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                       <th>No.</th>
+                                        <th>House owner</th>
+                                        <th>Sub county</th>
+                                        <th>Ward</th>
+										<th>Rate</th>
+										<th>Penalty</th>
+										<th>Payment status</th>
+                                        <th>Last paid</th>
+                                        <th>Amount paid</th>
+                                        <th>amount due</th>
+                                    </tr>
+                                </tfoot>
+                                <tbody>
+                                    <tr>
+                                        <td><strong data-toggle="modal" data-target="#details-modal" title="view more details">ASE 456</strong></td>
+                                        <td>John Doe Mwikali</td>
+                                        <td>Mavoko</td>
+                                        <td>Kinanie</td>
+                                        <td>2,589</td>
+                                        <td>3,56</td>
+                                        <td><span class="badge badge-danger">Uncleared balances</span></td>
+                                        <td>2-Oct-2018</td>
+                                        <td>2,000</td>
+                                        <td>589</td>
+                                    </tr>
+									 <tr>
+                                        <td><strong data-toggle="modal" data-target="#details-modal" title="view more details">ASE 456</strong></td>
+                                        <td>John Doe Mwikali</td>
+                                        <td>Mavoko</td>
+                                        <td>Kinanie</td>
+                                        <td>2,589</td>
+                                        <td>000</td>
+										 <td><span class="badge badge-success">compliant</span></td>
+                                        <td>2-Oct-2018</td>
+                                        <td>2,000</td>
+                                        <td>000</td>
+									</tr>
+                                </tbody>
+                            </table>
+                        </div>
+						</div>
+					<!--all compliant tables-->
+						
+					<!--uncompliant data tables-->
+						<div class="table-uncompliant d-none animated slideInRight">
+							<div class="table-responsive">
+                            <table id="uncompliant-table" class="table table-striped table-hover">
+                                <thead class="thead-default">
+                                    <tr>
+                                        <th>No. </th>
+                                        <th>House owner</th>
+                                        <th>Sub county</th>
+                                        <th>Ward</th>
+										<th>Rate</th>
+										<th>Penalty</th>
+										<th>Payment status</th>
+                                        <th>Last paid</th>
+                                        <th>Amount paid</th>
+                                        <th>amount due</th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                       <th>No.</th>
+                                        <th>House owner</th>
+                                        <th>Sub county</th>
+                                        <th>Ward</th>
+										<th>Rate</th>
+										<th>Penalty</th>
+										<th>Payment status</th>
+                                        <th>Last paid</th>
+                                        <th>Amount paid</th>
+                                        <th>amount due</th>
+                                    </tr>
+                                </tfoot>
+                                <tbody>
+                                    <tr>
+                                        <td><strong data-toggle="modal" data-target="#details-modal" title="view more details">ASE 456</strong></td>
+                                        <td>John Doe Mwikali</td>
+                                        <td>Mavoko</td>
+                                        <td>Kinanie</td>
+                                        <td>2,589</td>
+                                        <td>3,56</td>
+                                        <td><span class="badge badge-danger">Uncleared balances</span></td>
+                                        <td>2-Oct-2018</td>
+                                        <td>2,000</td>
+                                        <td>589</td>
+                                    </tr>
+									 <tr>
+                                        <td><strong data-toggle="modal" data-target="#details-modal" title="view more details">ASE 456</strong></td>
+                                        <td>John Doe Mwikali</td>
+                                        <td>Mavoko</td>
+                                        <td>Kinanie</td>
+                                        <td>2,589</td>
+                                        <td>000</td>
+										 <td><span class="badge badge-success">compliant</span></td>
+                                        <td>2-Oct-2018</td>
+                                        <td>2,000</td>
+                                        <td>000</td>
+									</tr>
+                                </tbody>
+                            </table>
+                        </div>
+						</div>
+					<!--uncompliant data tables-->
+						
+					<!--penalized data tables-->
+						<div class="table-penalty d-none animated slideInRight">
+							<div class="table-responsive">
+                            <table id="penalty-table" class="table table-striped table-hover">
+                                <thead class="thead-default">
+                                    <tr>
+                                        <th>No. </th>
+                                        <th>House owner</th>
+                                        <th>Sub county</th>
+                                        <th>Ward</th>
+										<th>Rate</th>
+										<th>Penalty</th>
+										<th>Payment status</th>
+                                        <th>Last paid</th>
+                                        <th>Amount paid</th>
+                                        <th>amount due</th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                       <th>No.</th>
+                                        <th>House owner</th>
+                                        <th>Sub county</th>
+                                        <th>Ward</th>
+										<th>Rate</th>
+										<th>Penalty</th>
+										<th>Payment status</th>
+                                        <th>Last paid</th>
+                                        <th>Amount paid</th>
+                                        <th>amount due</th>
+                                    </tr>
+                                </tfoot>
+                                <tbody>
+                                    <tr>
+                                        <td><strong data-toggle="modal" data-target="#details-modal" title="view more details">ASE 456</strong></td>
+                                        <td>John Doe Mwikali</td>
+                                        <td>Mavoko</td>
+                                        <td>Kinanie</td>
+                                        <td>2,589</td>
+                                        <td>3,56</td>
+                                        <td><span class="badge badge-danger">Uncleared balances</span></td>
+                                        <td>2-Oct-2018</td>
+                                        <td>2,000</td>
+                                        <td>589</td>
+                                    </tr>
+									 <tr>
+                                        <td><strong data-toggle="modal" data-target="#details-modal" title="view more details">ASE 456</strong></td>
+                                        <td>John Doe Mwikali</td>
+                                        <td>Mavoko</td>
+                                        <td>Kinanie</td>
+                                        <td>2,589</td>
+                                        <td>000</td>
+										 <td><span class="badge badge-success">compliant</span></td>
+                                        <td>2-Oct-2018</td>
+                                        <td>2,000</td>
+                                        <td>000</td>
+									</tr>
+                                </tbody>
+                            </table>
+                        </div>
+						</div>
+					<!--penalized data tables-->
+                    </div>
+                </div><footer class="footer hidden-xs-down">
+                    <p>RevenueSure Asset Manager.</p>
+                </footer>
+            </section>
+        </main>
+
+        <!-- Older IE warning message -->
+            <!--[if IE]>
+                <div class="ie-warning">
+                    <h1>Warning!!</h1>
+                    <p>You are using an outdated version of Internet Explorer, please upgrade to any of the following web browsers to access this website.</p>
+
+                    <div class="ie-warning__downloads">
+                        <a href="http://www.google.com/chrome">
+                            <img src="img/browsers/chrome.png" alt="">
+                        </a>
+
+                        <a href="https://www.mozilla.org/en-US/firefox/new">
+                            <img src="img/browsers/firefox.png" alt="">
+                        </a>
+
+                        <a href="http://www.opera.com">
+                            <img src="img/browsers/opera.png" alt="">
+                        </a>
+
+                        <a href="https://support.apple.com/downloads/safari">
+                            <img src="img/browsers/safari.png" alt="">
+                        </a>
+
+                        <a href="https://www.microsoft.com/en-us/windows/microsoft-edge">
+                            <img src="img/browsers/edge.png" alt="">
+                        </a>
+
+                        <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                            <img src="img/browsers/ie.png" alt="">
+                        </a>
+                    </div>
+                    <p>Sorry for the inconvenience!</p>
+                </div>
+            <![endif]-->
+
+        <!-- Javascript -->
+        <!-- Vendors -->
+        <script src="vendors/jquery/jquery.min.js"></script>
+        <script src="vendors/popper.js/popper.min.js"></script>
+        <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script src="vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+        <script src="vendors/jquery-scrollLock/jquery-scrollLock.min.js"></script>
+		
+		<script src="vendors/flot/jquery.flot.js"></script>
+        <script src="vendors/flot/jquery.flot.resize.js"></script>
+        <script src="vendors/flot.curvedlines/curvedLines.js"></script>
+        <script src="vendors/jqvmap/jquery.vmap.min.js"></script>
+        <script src="vendors/jqvmap/maps/jquery.vmap.world.js"></script>
+        <script src="vendors/easy-pie-chart/jquery.easypiechart.min.js"></script>
+        <script src="vendors/salvattore/salvattore.min.js"></script>
+        <script src="vendors/sparkline/jquery.sparkline.min.js"></script>
+        <script src="vendors/moment/moment.min.js"></script>
+        <script src="vendors/fullcalendar/fullcalendar.min.js"></script>
+		
+		 <script src="vendors/jquery-mask-plugin/jquery.mask.min.js"></script>
+        <script src="vendors/select2/js/select2.full.min.js"></script>
+        <script src="vendors/dropzone/dropzone.min.js"></script>
+        <script src="vendors/moment/moment.min.js"></script>
+        <script src="vendors/nouislider/nouislider.min.js"></script>
+        <script src="vendors/trumbowyg/trumbowyg.min.js"></script>
+        <script src="vendors/flatpickr/flatpickr.min.js"></script>
+        <script src="vendors/rateyo/jquery.rateyo.min.js"></script>
+        <script src="vendors/jquery-text-counter/textcounter.min.js"></script>
+        <script src="vendors/autosize/autosize.min.js"></script>
+        <script src="vendors/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+
+        <!-- Vendors: Data tables -->
+        <script src="vendors/datatables/jquery.dataTables.min.js"></script>
+        <script src="vendors/datatables-buttons/dataTables.buttons.min.js"></script>
+        <script src="vendors/datatables-buttons/buttons.print.min.js"></script>
+        <script src="vendors/jszip/jszip.min.js"></script>
+        <script src="vendors/datatables-buttons/buttons.html5.min.js"></script>
+<!--high chart-->
+		<script src="vendors/highcharts/highchart.js"></script>
+		<script src="vendors/highcharts/data.js"></script>
+		<script src="vendors/highcharts/drilldown.js"></script>
+		<script src="vendors/highcharts/exporting.js"></script>
+		<script src="vendors/highcharts/export-data.js"></script>
+        <script src="vendors/highcharts/accesibility.js"></script>
+        
+        <script src="js/highcharts/highcharts-more.js"></script>
+
+        <!-- App functions and actions -->
+        <script src="js/wow.js"></script>
+        <script src="js/app.min.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+        //collection comparison
+        $(function () {
+            
+            // Issue #602 workaround
+            Highcharts.seriesTypes.gauge.prototype.drawLegendSymbol = 
+            Highcharts.seriesTypes.column.prototype.drawLegendSymbol;
+            
+            var chartColors = ['#828282','#424242'];
+            var gaugePBColors = ['#ee745e','#ffdd62','#6ed08c'];
+            
+            var chart = new Highcharts.Chart({
+            
+                chart: {
+                    renderTo: 'gauge01',
+                    type: 'gauge',
+                    backgroundColor: 'none'
+                },
+                
+                colors: [
+                    chartColors[0],
+                    chartColors[1]
+                ],
+                
+                credits: {
+                    enabled: false
+                },
+            
+                title: {
+                    text: '',
+                    style: {
+                        fontFamily: 'arial,helvetica,sans-serif',
+                        color: chartColors[1],
+                        fontWeight: 'bold',
+                        fontSize: '24px'
+                    }
+                },
+                
+                legend: {
+                    align: 'left',
+                    verticalAlign: 'bottom',
+                    layout: 'vertical',
+                    x: 0,
+                    y: -112,
+                    floating: true,
+                    borderWidth:0
+                },
+                
+                navigation: {
+                    buttonOptions: {
+                        floating: true,
+                        align: 'right',
+                        verticalAlign: 'bottom',
+                        y: -134,
+                        backgroundColor: 'white',
+                        borderWidth: 0,
+                        symbolSize: 2
+                    },
+                    menuStyle: {
+                        borderWidth: 0,
+                        backgroundColor: '#424242',
+                        borderRadius: '7px',
+                        padding: '5px 0',
+                        overflow: 'hidden',
+                        BoxShadow: '2px 2px 4px rgba(255,0,0,1) !important'
+                    },
+                    menuItemStyle: {
+                        fontSize: '12px',
+                        color: '#ffffff',
+                        padding: '3px 12px 5px'
+                    },
+                    menuItemHoverStyle: {
+                        backgroundColor: '#828282'
+                    }
+                },
+                
+                exporting: {
+                    buttons: {
+                        exportButton: {
+                            symbolFill: '#424242',
+                            symbolStroke: '#424242',
+                            hoverSymbolFill: '#828282',
+                            hoverSymbolStroke: '#828282'
+                        },
+                        printButton: {
+                            enabled: false
+                        }
+                    }
+                },
+                
+                pane: [{
+                    startAngle: -90,
+                    endAngle: 90,
+                    background: null
+                }],                        
+            
+                yAxis: [{
+                    min: 0,
+                    max: 100,
+                    lineColor: 'transparent',
+                    tickWidth: 2,
+                    tickLength: 12,
+                    tickColor: 'transparent', /*'#ffffff',*/
+                    minorTickColor: 'transparent',
+                    labels: {
+                        rotation: null,
+                        distance: 15,
+                        zIndex: 1
+                    },
+                    plotBands: [{
+                        from: 0,
+                        to: 25,
+                        color: gaugePBColors[0],
+                        innerRadius: '50%',
+                        outerRadius: '100%'
+                    },{
+                        from: 25,
+                        to: 75,
+                        color: gaugePBColors[1],
+                        innerRadius: '50%',
+                        outerRadius: '100%'
+                    },{
+                        from: 75,
+                        to: 100,
+                        color: gaugePBColors[2],
+                        innerRadius: '50%',
+                        outerRadius: '100%'
+                    }],
+                    pane: 0
+                }],
+                
+                plotOptions: {
+                    gauge: {
+                        dial: {
+                            radius: '100%',
+                            baseWidth: 7,
+                            baseLength: 14,
+                            rearLength: 0
+                        },
+                        pivot: {
+                            radius: 3,
+                            backgroundColor: chartColors[1]
+                        },
+                        showInLegend: true
+                    }
+                },
+                    
+            
+                series: [{
+                    name: 'Fiktivia A/S',
+                    data: [18.34],
+                  	showCheckbox: false,
+                     showInLegend: false,
+                    dial: {
+                        backgroundColor: chartColors[0]
+                    },
+                    yAxis: 0,
+                    dataLabels: {
+                        enabled: true,
+                        x: 44,
+                        y: -157,
+                        color: chartColors[0],
+                        borderWidth: 0,
+                        borderRadius: 7,
+                        backgroundColor: '#ffffff',
+                        padding: 1,
+                        style: {
+                            fontSize: '20px',
+                            fontWeight: 'bold',
+                            lineHeight: '40px'
+                        }
+                    }
+                },{
+                    name: 'Afdeling X',
+                    showInLegend: false,
+                    data: [18.1],
+                    dial: {
+                        backgroundColor: chartColors[1]
+                    },
+                    yAxis: 0,
+                    dataLabels: {
+                        enabled: true,
+                        x: 96,
+                        y: -135,
+                        color: chartColors[1],
+                        borderWidth: 0,
+                        borderRadius: 7,
+                        backgroundColor: '#ffffff',
+                        padding: 1,
+                        style: {
+                            fontSize: '20px',
+                            fontWeight: 'bold',
+                            lineHeight: '40px'
+                        }
+                    }
+                }]
+            
+            }
+            
+            /*,
+            // Let the music play
+            function(chart) {
+                setInterval(function() {
+                    var dep = chart.series[0].points[0],
+                        depVal, 
+                        depInc = (Math.round(Math.random()*10 - 5)/10);
+                    var com = chart.series[1].points[0],
+                        comVal, 
+                        comInc = (Math.round(Math.random()*10 - 5)/10);
+                    
+                    depVal =  dep.y + depInc;
+                    if (depVal < 1 || depVal > 7) {
+                        depVal = dep.y - depInc;
+                    }
+                    comVal =  com.y + comInc;
+                    if (comVal < 1 || comVal > 7) {
+                        comVal = com.y - comInc;
+                    }
+                    
+                    dep.update(depVal, false);
+                    com.update(comVal, false);
+                    chart.redraw();
+            
+                }, 2000);
+            
+            }*/
+            
+            );
+        });
+    
+        //collection summary
+        </script>
+    </body>
+
+<!-- Mirrored from byrushan.com/projects/material-admin/app/2.6/data-table.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Jul 2019 11:35:08 GMT -->
+</html>
