@@ -228,8 +228,8 @@
 
                     <ul class="navigation">
                         <li class="navigation__active"><a href="index.html"><i class="zmdi zmdi-view-dashboard"></i>Home</a></li>
-						<li class="navigation__active"><a href="#"><i class="zmdi zmdi-face "></i>Students</a></li>
-						<li class="navigation__active"><a href="#"><i class="zmdi zmdi-accounts-alt "></i>Parents</a></li>
+						<li class="navigation__active"><a href="student.html"><i class="zmdi zmdi-face "></i>Students</a></li>
+						<li class="navigation__active"><a href="parents.html"><i class="zmdi zmdi-accounts-alt "></i>Guardians</a></li>
 						<li class="navigation__active"><a href="#"><i class="zmdi zmdi-store "></i>Shops</a></li>
 
 
@@ -365,202 +365,132 @@
 
             
 
-            <section class="content">
+            <section class="content custom-table-container">
                 <header class="content__title px-0 border-0">
-                  	 <span class="rev-title-container">
-						 <h1 class="text-capitalize stream_name m-0">All revenue streams</h1>
-						 <div class="actions text-black d-none">
-                        <a href="#" class="actions__item zmdi zmdi-trending-up d-none"></a>
-                        <a href="#" class="actions__item zmdi zmdi-check-all d-none"></a>
-
-                        <div class="dropdown actions__item" title="choose another revenue stream">
-                            <i data-toggle="dropdown" class="zmdi zmdi-more-vert"></i>
-                            <div class="dropdown-menu dropdown-menu-right">
-                                <a href="#!" class="dropdown-item">All Revenue streams</a>
-                                <a href="#!" class="dropdown-item">Adverts & signage</a>
-                                <a href="#!" class="dropdown-item">Land rates</a>
-                                <a href="#!" class="dropdown-item">Mining & quarries</a>
-                               	<a href="#!" class="dropdown-item">Businesses</a>
-                                <a href="#!" class="dropdown-item">Housing</a>
-								
-								
-                            </div>
-                        </div>
-                    </div>
-						 
-					</span>
-                    <small>Showing revenue collection summery for <strong class="stream_name">all revenue streams</strong></small>
-
-                    
-                </header>
-
-                <div class="row quick-stats owl-carousel">
-					<div class="col ">
-                        <a href="all-revenue-streams.html" class="quick-stats__item bg-red-one bg-pattern">
-                            <div class="quick-stats__info">
-								<h3 class="">All Assets</h3>
-								<h4 class="">752,589 Assets</h4>
-                                <h2>386,376,269</h2>
-								<small>Collected revenue (95.89%)</small>
-								
-								<h2>402,952,609</h2>
-								<small>Expected revenue </small>
-								
-								<strong>815 Uncompliant Assets</strong>
-                            </div>
-                        </a>
-					</div>
-					
-                    <div class="col ">
-                        <a href="business.html" class="quick-stats__item bg-primary-green bg-pattern">
-                            <div class="quick-stats__info">
-								<h3 class="">Business permits</h3>
-								<h4 class="">6,003 Permits</h4>
-                                <h2>356,785</h2>
-								<small>Collected revenue (29.11%)</small>
-								
-								<h2>1,256,369</h2>
-								<small>Expected revenue </small>
-								
-								<strong>728 Uncompliant Businesses</strong>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col">
-                        <a href="land-rates.html.html" class="quick-stats__item bg-secondary-green bg-pattern">
-                            <div class="quick-stats__info">
-								<h3>Land rates</h3>
-								<h4 class="the_week">32,356 Parcels</h4>
-                                <h2>356,785,568</h2>
-								<small>Collected Revenue (99.04%)</small>
-								
-								<h2>360,238,000</h2>
-								<small>Expected revenue</small>
-								
-								<strong>5 Uncompliant Land owners</strong>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col">
-                        <a href="housing.html" class="quick-stats__item bg-primary-green bg-pattern">
-                            <div class="quick-stats__info">
-								<h3>County rentals</h3>
-								<h4 class="the_month">62,589 Rentals</h4>
-                                <h2>58,778</h2>
-								<small>Collected revenue (18.34%)</small>
-								
-								<h2>320,450</h2>
-                                <small>Expected revenue</small>
-								<strong>32 Uncompliant rentals</strong>
-                            </div>
-                        </a>
-                    </div>
-					
-					
-
-                    <div class="col">
-                        <a href="adverts.html" class="quick-stats__item bg-secondary-green bg-pattern">
-                            <div class="quick-stats__info">
-								<h3>Billboards & Adverts</h3>
-								<h4>325,859 Billboards</h4>
-
-								<h2>14,586,569</h2>
-								<small>collected revenue (70.92%)</small>
-								
-								<h2>20,568,895</h2>
-								<small>Expected revenue</small>
-								
-								<strong>25 Uncompliant/ Unassigned</strong>
-                            </div>
-                        </a>
-					</div>
-					
-					<div class="col">
-                        <a href="mining.html" class="quick-stats__item bg-primary-green bg-pattern">
-                            <div class="quick-stats__info">
-								<h3>Mining & quarries</h3>
-								<h4>325,782 Mining sites</h4>
-
-								<h2>14,586,569</h2>
-								<small>collected revenue (70.92%)</small>
-								
-								<h2>20,568,895</h2>
-								<small>collected revenue</small>
-								
-								<strong>25 Uncompliant/ Unassigned</strong>
-                            </div>
-                        </a>
-					</div>
-					
-                </div>
-
-                <div class="row">
-                    <div class="col-md-7 col-sm-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">2019/2020 Collection summary</h4>
-                                <h6 class="card-subtitle">You can click on a revenue stream to<strong> drill down</strong> to months collections for the specific revenue stream</h6>
-
-                                <div id="revenue-chart-data"></div>
-                                <div class="flot-chart-legends flot-chart-legends--curved"></div>
-                            </div>
-                        </div>
-                    </div>
-					<div class="col-md-5 col-sm-12">
-						<div class="card asset-num-container">
-							<div class="card-body">
-                                <h4 class="card-title">County Assets</h4>
-                                <h6 class="card-subtitle">Comparison of registered assets compliancy</h6>
+				 	<div class="row">
+						<div class="col-8">
+							<span class="rev-title-container">
+							 <h1 class="text-capitalize stream_name m-0">Registered Blinkers (Students)</h1>
+							</span>
+							<div class="">
+								<ol class="breadcrumb border-0">
+									<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+									<li class="breadcrumb-item active">Blinkers</li>
+								</ol>
 							</div>
+						</div>
+						<div class="col-4">
+							<div class="section-header">
+								<a href="#" class="btn btn-sm btn-secondary" title="">Upload Student's Excel</a>
+								<a href="#" class="btn btn-sm btn-primary ml-3" title="">New Blinker</a>
+							</div>
+							
+						</div>						
+					</div>
+                </header
+				
+				<div class="row">
+					<div class="col-12 p-0">
+						<div class="card table-custom-bg">
+							<div class="card-body">
+								<div class="table-responsive">
+									<table class="table table-hover table-custom spacing8" id="data-table">
+										<thead>
+											<tr> 
+												<th>Profile</th>
+												<th>Blinker Particulars</th>
+												<th>Recent Transaction</th>
+												<th>Assigned To</th>
+												<th>Status</th>
+												<th>Actions</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="w60">
 
-							<div class="listview listview--striped">
-								<div class="listview__item">
-									<div class="listview__content">
-										<p><strong>Business permits  (87.87% Compliancy)</p>
-										<div class="listview__heading"><strong>728</strong> out of <strong>6,003</strong> permits not renewed</div>
-										
-									</div>
-								</div>
-
-								<div class="listview__item">
-									<div class="listview__content">
-										<p><strong>Land certificates (99.98%Compliancy) </p>
-										<div class="listview__heading"><strong>5</strong> out of <strong>32,356</strong> plots have paid their landrates</div>
-									</div>
-								</div>
-
-								<div class="listview__item">
-									<div class="listview__content">
-										<p><strong>County rentals (99.95% Compliancy</p>
-										<div class="listview__heading"><strong>32</strong> out of <strong>62,589</strong> have outstanding arrears</div>
-									</div>
-								</div>
-									
-								<div class="listview__item" >
-									<div class="listview__content">
-										<p><strong>Billboards (99.99% compliancy)</p>
-										<div class="listview__heading"><strong>238</strong> out of <strong>1,589</strong> billboards are compliant</div>
-									</div>
-								</div>
-								
-								<div class="listview__item">
-									<div class="listview__content">
-										<p><strong>Quarries (38.36% Compliancy)</p>
-										<div class="listview__heading"><strong>588</strong> out of <strong>954</strong> queries are compliant</div>
-									</div>
+													<span title="" href="#"><div class="avatar-char">SO</div></span>
+												</td>
+												<td>
+													<p class="mb-0">Scott Ortega</p>
+													<a href="tel:070235689" title="">070235689</a>
+												</td>
+												<td>
+													<span>22 May 2020.</span>
+												</td>
+												<td>3 Gurdians</td>
+												<td><span class="badge badge-success">Active</span></td>
+												<td><strong>4 Student(s)</strong></td>
+											</tr>
+											<tr>
+												<td class="w60">
+													<span title="" href="#"><div class="avatar-char">SO</div></span>
+												</td>
+												<td>
+													<p class="mb-0">Scott Ortega</p>
+													<a href="tel:070235689" title="">070235689</a>
+												</td>
+												<td>
+													<span>3 May 2020</span>
+												</td>
+												<td><strong>Mr Kelvin Doe</strong></td>
+												<td><span class="badge badge-danger">Inctive</span></td>
+												<td><strong>7 Student(s)</strong></td>
+											</tr>
+											<tr>
+												<td class="w60">
+													<span title="" href="#"><div class="avatar-char">SO</div></span>
+												</td>
+												<td>
+													<p class="mb-0">Scott Ortega</p>
+													<a href="tel:070235689" title="">070235689</a>
+												</td>                                    
+												<td>
+													<span>3 May 2020</span>
+												</td>
+												<td><strong>Mr Kelvin Doe</strong></td>
+												<td><span class="badge badge-warning">Insufficient Funds</span></td>
+												<td><strong>12 Student(s)</strong></td>
+											</tr>
+											<tr>
+												<td class="w60">
+													<span title="" href="#"><div class="avatar-char">SO</div></span>
+												</td>
+												<td>
+													<p class="mb-0">Scott Ortega</p>
+													<a href="tel:070235689" title="">070235689</a>
+												</td>
+												<td>
+													<span>2 May 2020</span>
+												</td>
+												<td>15 Guardian(s)</td>
+												<td><span class="badge badge-warning">Insufficient Funds</span></td>
+												<td><strong>18 Student(s)</strong></td>
+											</tr>
+											<tr>
+												<td class="w60">
+													<span title="" href="#"><div class="avatar-char">SO</div></span>
+												</td>
+												<td>
+													<p class="mb-0">Scott Ortega</p>
+													<a href="tel:070235689" title="">070235689</a>
+												</td>
+												<td>
+													<span>1 May 2020 </span>
+												</td>
+												<td>2 Guardians</td>
+												<td><span class="badge badge-warning">Insufficient Funds</span></td>
+												<td><strong>14 Student(s)</strong></td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
 							</div>
 						</div>
 					</div>
-                    
-                </div>
-
-                
-
+				</div>
                 <footer class="footer hidden-xs-down">
-                    <p>RevenueSure Asset Manager.</p>
+                    <p>Powered by<a href="https://nouveta.tech/" target="new"> Nouveta LTD</a></p>
                 </footer>
             </section>
         </main>
@@ -630,6 +560,14 @@
         <script src="vendors/jquery-text-counter/textcounter.min.js"></script>
         <script src="vendors/autosize/autosize.min.js"></script>
         <script src="vendors/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+		
+		
+        <!-- Vendors: Data tables -->
+        <script src="vendors/datatables/jquery.dataTables.min.js"></script>
+        <script src="vendors/datatables-buttons/dataTables.buttons.min.js"></script>
+        <script src="vendors/datatables-buttons/buttons.print.min.js"></script>
+        <script src="vendors/jszip/jszip.min.js"></script>
+        <script src="vendors/datatables-buttons/buttons.html5.min.js"></script>
 
         <!-- Charts and maps-->
         <script src="demo/js/flot-charts/curved-line.js"></script>
@@ -655,902 +593,8 @@
 
         <!-- App functions and actions -->
         <script src="js/app.min.js"></script>
-        <script src="js/main.js"></script>
+        <script src="js/main.js"></script>		
 		
-		<!--chart data scripts-->
-		
-		<script>
-			// Create the chart
-			// Highcharts.setOptions({
-			// 	colors: ['#0255a3']
-			// });
-			Highcharts.chart('revenue-chart-data', {
-			  chart: {
-				type: 'column'
-			  },
-			  title: {
-				text: ' '
-			  },
-
-			  accessibility: {
-				announceNewData: {
-				  enabled: true
-				}
-			  },
-			  xAxis: {
-				type: 'category'
-			  },
-			  yAxis: {
-				title: {
-				  text: 'Total Revenue'
-				}
-
-			  },
-			  legend: {
-				enabled: false
-			  },
-
-			  tooltip: {
-				headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
-				pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>KES {point.y}</b><br/>'
-			  },
-			  lang: {
-				thousandsSep: ','
-			  },
-
-			  series: [{
-				name: "Collected Revenue",
-				colorByPoint: true,
-				data: [{
-					name: "Adverts",
-					y: 2000000,
-					drilldown: "Adverts"
-				  },
-				  {
-					name: "Land Rates",
-					y: 300000,
-					drilldown: "LandRates"
-				  },
-				  {
-					name: "Business",
-					y: 2536000,
-					drilldown: "Business"
-				  },
-				  {
-					name: "Housing",
-					y: 3258023,
-					drilldown: "Housing"
-				  },
-				  {
-					name: "Mining",
-					y: 4158023,
-					drilldown: "Mining"
-				  }
-				]
-			  }],
-			  drilldown: {
-				series: [{
-					name: "Adverts",
-					id: "Adverts",
-					data: [
-					  [
-						"Jan",
-						23589
-					  ],
-					  [
-						"Feb",
-						2589
-					  ],
-					  [
-						"Mar",
-						256689
-					  ],
-					  [
-						"Apr",
-						25896
-					  ],
-					  [
-						"May",
-						56895
-					  ],
-					  [
-						"Jun",
-						58956
-					  ],
-					  [
-						"Jul",
-						58974
-					  ],
-					  [
-						"Aug",
-						554896
-					  ],
-					  [
-						"Sep",
-						2123358
-					  ],
-					  [
-						"Oct",
-						45268
-					  ],
-					  [
-						"Nov",
-						45895
-					  ],
-					  [
-						"Dec",
-						25895
-					  ]
-					]
-				  },
-				  {
-					name: "Land Rates",
-					id: "LandRates",
-					data: [
-					  [
-						"Jan",
-						23589
-					  ],
-					  [
-						"Feb",
-						2589
-					  ],
-					  [
-						"Mar",
-						256689
-					  ],
-					  [
-						"Apr",
-						25896
-					  ],
-					  [
-						"May",
-						56895
-					  ],
-					  [
-						"Jun",
-						58956
-					  ],
-					  [
-						"Jul",
-						58974
-					  ],
-					  [
-						"Aug",
-						554896
-					  ],
-					  [
-						"Sep",
-						2123358
-					  ],
-					  [
-						"Oct",
-						45268
-					  ],
-					  [
-						"Nov",
-						45895
-					  ],
-					  [
-						"Dec",
-						25895
-					  ]
-					]
-				  },
-				  {
-					name: "Business",
-					id: "Business",
-					data: [
-					  [
-						"Jan",
-						23589
-					  ],
-					  [
-						"Feb",
-						2589
-					  ],
-					  [
-						"Mar",
-						256689
-					  ],
-					  [
-						"Apr",
-						25896
-					  ],
-					  [
-						"May",
-						56895
-					  ],
-					  [
-						"Jun",
-						58956
-					  ],
-					  [
-						"jul",
-						58974
-					  ],
-					  [
-						"Aug",
-						554896
-					  ],
-					  [
-						"Sep",
-						2123358
-					  ],
-					  [
-						"Oct",
-						45268
-					  ],
-					  [
-						"Nov",
-						45895
-					  ],
-					  [
-						"Dec",
-						25895
-					  ]
-					]
-				  },
-				  {
-					name: "Housing",
-					id: "Housing",
-					data: [
-					  [
-						"Jan",
-						23589
-					  ],
-					  [
-						"Feb",
-						2589
-					  ],
-					  [
-						"Mar",
-						256689
-					  ],
-					  [
-						"Apr",
-						25896
-					  ],
-					  [
-						"May",
-						56895
-					  ],
-					  [
-						"Jun",
-						58956
-					  ],
-					  [
-						"Jul",
-						58974
-					  ],
-					  [
-						"Aug",
-						554896
-					  ],
-					  [
-						"Sep",
-						2123358
-					  ],
-					  [
-						"Oct",
-						45268
-					  ],
-					  [
-						"Nov",
-						45895
-					  ],
-					  [
-						"Dec",
-						25895
-					  ]
-					]
-				  },
-				  {
-					name: "Mining",
-					id: "Mining",
-					data: [
-					  [
-						"Jan",
-						23589
-					  ],
-					  [
-						"Feb",
-						2589
-					  ],
-					  [
-						"Mar",
-						256689
-					  ],
-					  [
-						"Apr",
-						25896
-					  ],
-					  [
-						"May",
-						56895
-					  ],
-					  [
-						"Jun",
-						58956
-					  ],
-					  [
-						"Jul",
-						58974
-					  ],
-					  [
-						"Aug",
-						554896
-					  ],
-					  [
-						"Sep",
-						21233
-					  ],
-					  [
-						"Oct",
-						45268
-					  ],
-					  [
-						"Nov",
-						458954
-					  ],
-					  [
-						"Dec",
-						25895
-					  ]
-					]
-				  },
-				  {
-					name: "June",
-					id: "june",
-					data: [
-					  [
-						"1",
-						23589
-					  ],
-					  [
-						"2",
-						2589
-					  ],
-					  [
-						"3",
-						256689
-					  ],
-					  [
-						"4",
-						25896
-					  ],
-					  [
-						"5",
-						56895
-					  ],
-					  [
-						"6",
-						58956
-					  ],
-					  [
-						"7",
-						58974
-					  ],
-					  [
-						"8",
-						554896
-					  ],
-					  [
-						"9",
-						2123358
-					  ],
-					  [
-						"10",
-						45268
-					  ],
-					  [
-						"11",
-						45895
-					  ],
-					  [
-						"12",
-						25895
-					  ],
-					  [
-						"13",
-						12589
-					  ],
-					  [
-						"14",
-						548596
-					  ],
-					  [
-						"15",
-						215895
-					  ],
-					  [
-						"16",
-						12589
-					  ],
-					  [
-						"17",
-						12589
-					  ],
-					  [
-						"18",
-						158932
-					  ]
-					]
-				  },
-				  {
-					name: "July",
-					id: "july",
-					data: [
-					  [
-						"1",
-						23589
-					  ],
-					  [
-						"2",
-						2589
-					  ],
-					  [
-						"3",
-						256689
-					  ],
-					  [
-						"4",
-						25896
-					  ],
-					  [
-						"5",
-						56895
-					  ],
-					  [
-						"6",
-						58956
-					  ],
-					  [
-						"7",
-						58974
-					  ],
-					  [
-						"8",
-						554896
-					  ],
-					  [
-						"9",
-						2123358
-					  ],
-					  [
-						"10",
-						45268
-					  ],
-					  [
-						"11",
-						45895
-					  ],
-					  [
-						"12",
-						25895
-					  ],
-					  [
-						"13",
-						12589
-					  ],
-					  [
-						"14",
-						548596
-					  ],
-					  [
-						"15",
-						215895
-					  ],
-					  [
-						"16",
-						12589
-					  ],
-					  [
-						"17",
-						12589
-					  ],
-					  [
-						"18",
-						158932
-					  ]
-					]
-				  },
-				  {
-					name: "August",
-					id: "august",
-					data: [
-					  [
-						"1",
-						23589
-					  ],
-					  [
-						"2",
-						2589
-					  ],
-					  [
-						"3",
-						256689
-					  ],
-					  [
-						"4",
-						25896
-					  ],
-					  [
-						"5",
-						56895
-					  ],
-					  [
-						"6",
-						58956
-					  ],
-					  [
-						"7",
-						58974
-					  ],
-					  [
-						"8",
-						554896
-					  ],
-					  [
-						"9",
-						2123358
-					  ],
-					  [
-						"10",
-						45268
-					  ],
-					  [
-						"11",
-						45895
-					  ],
-					  [
-						"12",
-						25895
-					  ],
-					  [
-						"13",
-						12589
-					  ],
-					  [
-						"14",
-						548596
-					  ],
-					  [
-						"15",
-						215895
-					  ],
-					  [
-						"16",
-						12589
-					  ],
-					  [
-						"17",
-						12589
-					  ],
-					  [
-						"18",
-						158932
-					  ]
-					]
-				  },
-				  {
-					name: "september",
-					id: "september",
-					data: [
-					  [
-						"1",
-						23589
-					  ],
-					  [
-						"2",
-						2589
-					  ],
-					  [
-						"3",
-						256689
-					  ],
-					  [
-						"4",
-						25896
-					  ],
-					  [
-						"5",
-						56895
-					  ],
-					  [
-						"6",
-						58956
-					  ],
-					  [
-						"7",
-						58974
-					  ],
-					  [
-						"8",
-						554896
-					  ],
-					  [
-						"9",
-						2123358
-					  ],
-					  [
-						"10",
-						45268
-					  ],
-					  [
-						"11",
-						45895
-					  ],
-					  [
-						"12",
-						25895
-					  ],
-					  [
-						"13",
-						12589
-					  ],
-					  [
-						"14",
-						548596
-					  ],
-					  [
-						"15",
-						215895
-					  ],
-					  [
-						"16",
-						12589
-					  ],
-					  [
-						"17",
-						12589
-					  ],
-					  [
-						"18",
-						158932
-					  ]
-					]
-				  },
-				  {
-					name: "October",
-					id: "october",
-					data: [
-					  [
-						"1",
-						23589
-					  ],
-					  [
-						"2",
-						2589
-					  ],
-					  [
-						"3",
-						256689
-					  ],
-					  [
-						"4",
-						25896
-					  ],
-					  [
-						"5",
-						56895
-					  ],
-					  [
-						"6",
-						58956
-					  ],
-					  [
-						"7",
-						58974
-					  ],
-					  [
-						"8",
-						554896
-					  ],
-					  [
-						"9",
-						2123358
-					  ],
-					  [
-						"10",
-						45268
-					  ],
-					  [
-						"11",
-						45895
-					  ],
-					  [
-						"12",
-						25895
-					  ],
-					  [
-						"13",
-						12589
-					  ],
-					  [
-						"14",
-						548596
-					  ],
-					  [
-						"15",
-						215895
-					  ],
-					  [
-						"16",
-						12589
-					  ],
-					  [
-						"17",
-						12589
-					  ],
-					  [
-						"18",
-						158932
-					  ]
-					]
-				  },
-				  {
-					name: "November",
-					id: "november",
-					data: [
-					  [
-						"1",
-						23589
-					  ],
-					  [
-						"2",
-						2589
-					  ],
-					  [
-						"3",
-						256689
-					  ],
-					  [
-						"4",
-						25896
-					  ],
-					  [
-						"5",
-						56895
-					  ],
-					  [
-						"6",
-						58956
-					  ],
-					  [
-						"7",
-						58974
-					  ],
-					  [
-						"8",
-						554896
-					  ],
-					  [
-						"9",
-						2123358
-					  ],
-					  [
-						"10",
-						45268
-					  ],
-					  [
-						"11",
-						45895
-					  ],
-					  [
-						"12",
-						25895
-					  ],
-					  [
-						"13",
-						12589
-					  ],
-					  [
-						"14",
-						548596
-					  ],
-					  [
-						"15",
-						215895
-					  ],
-					  [
-						"16",
-						12589
-					  ],
-					  [
-						"17",
-						12589
-					  ],
-					  [
-						"18",
-						158932
-					  ]
-					]
-				  },
-				  {
-					name: "December",
-					id: "december",
-					data: [
-					  [
-						"1",
-						23589
-					  ],
-					  [
-						"2",
-						2589
-					  ],
-					  [
-						"3",
-						256689
-					  ],
-					  [
-						"4",
-						25896
-					  ],
-					  [
-						"5",
-						56895
-					  ],
-					  [
-						"6",
-						58956
-					  ],
-					  [
-						"7",
-						58974
-					  ],
-					  [
-						"8",
-						554896
-					  ],
-					  [
-						"9",
-						2123358
-					  ],
-					  [
-						"10",
-						45268
-					  ],
-					  [
-						"11",
-						45895
-					  ],
-					  [
-						"12",
-						25895
-					  ],
-					  [
-						"13",
-						12589
-					  ],
-					  [
-						"14",
-						548596
-					  ],
-					  [
-						"15",
-						215895
-					  ],
-					  [
-						"16",
-						12589
-					  ],
-					  [
-						"17",
-						12589
-					  ],
-					  [
-						"18",
-						158932
-					  ]
-					]
-				  },
-
-				]
-			  }
-			});
-
-		</script>
     </body>
 
 <!-- Mirrored from byrushan.com/projects/material-admin/app/2.6/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Jul 2019 11:34:43 GMT -->
