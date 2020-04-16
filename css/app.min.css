@@ -14278,6 +14278,17 @@ header .section-header{
     border-spacing: 0 8px !important;
 }
 
+.table.table-custom td:last-child, .table.table-custom th:last-child{
+	display: flex;
+    justify-content: flex-end;
+    align-items: center;
+	text-align: right;
+}
+
+.table.table-custom td:last-child button{
+	font-size: 10px;
+}
+
 .table-custom-bg{
 	background: #b3b7b70f!important;
 }
@@ -14293,4 +14304,67 @@ header .section-header{
     overflow: auto;
     background:#f0f0f0!important;
 }
+
+td .icon{
+	font-size: 1.9rem;
+	padding-left: 15px;
+	cursor: pointer;
+}
+td .badge{
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.custom-table-container tr td:first-child, .custom-table-container th:first-child{
+	padding-left: 1rem !important;
+    padding: 1rem;
+    padding-right: 0px !important;
+}
 /*table custom styles*/
+
+
+/*soft badge*/
+
+.badge-soft-info {
+  color: #2c7be5;
+  background-color: #d5e5fa;
+}
+.badge-soft-gray {
+  color: #6e84a3;
+  background-color: #e2e6ed;
+}
+.badge-soft-success {
+  color: #03824d;
+  background-color: #ccf7e5;
+}
+.badge-soft-warning {
+  color: #fd6d07;
+  background-color: #fdf3d9;
+}
+.badge-soft-danger {
+  color: #ff0c39;
+  background-color: #fad7dd;
+}
+.badge-soft-light {
+  color: #edf2f9;
+  background-color: #fbfcfe;
+}
+.badge-soft-dark {
+  color: #8d18ab;
+    background-color: #edd1f2;
+}
+
+/*soft badge*/
+
+
+
+@media (max-width: 575.98px) 
+{
+	.section-header{
+		justify-content: flex-start;
+	}
+	.rev-title-container h1{
+		font-size: 1.4rem;
+	}
+
+}
