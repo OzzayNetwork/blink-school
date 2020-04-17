@@ -10712,7 +10712,7 @@ stroke:#FF9800
     position: relative
 }
 .profile__img img {
-    max-width: 200px;
+    max-width: 132px;
     border-radius: 2px
 }
 
@@ -14353,6 +14353,45 @@ td .badge{
   color: #8d18ab;
     background-color: #edd1f2;
 }
+
+.profile-container{
+	background: transparent url(../../../assets/images/image-gallery/10.jpg) repeat scroll center center/cover;
+    color: #fff;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: .1875rem;
+    box-shadow: inset 0 0 0 2000px #282b2f;
+	background:white;
+	display:flex;
+}
+.prof-details h5{
+	font-size: 1.25rem;
+	font-weight: bold;
+    line-height: 1.2;
+	color: white;
+}
+
+.profile-container .prof-details{
+	margin-left: 18px;
+}
+
+.profile-container .profile__img img{
+	width: 70px;
+}
+
+
+.account-info div h2, .edit-account h2{
+	color: #f67615;
+    font-weight:bold;
+	font-size: 15px;
+}
+
+.account-info .card-body p{
+	font-weight: 600;
+}
+
+
 
 /*soft badge*/
 
