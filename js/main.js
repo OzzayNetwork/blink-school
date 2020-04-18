@@ -115,6 +115,13 @@ $(window).on('load', function(){
 	
 });
 
+$('table').on('.deactivator','click', function(){
+	alert('clicked');
+	var the_title=$(this).parent().siblings('.std_name');
+	$('#deactivate-title').text(the_title);
+	alert(the_title);
+});
+
 //owl initializer
 $(document).ready(function(){
 
