@@ -74,9 +74,34 @@ $(window).on('load', function(){
 		$('#deactivate-shop #deactivate-shop-title').text("Why do you want deactivate "+the_title+"'s shop?");
 	});
 	//deactivating shop
+	
+	//deactivating system usres
+	
+	$('.table').on('click', '.deactivate-user', function(){
+		var the_title=$(this).parent().siblings('.the_user').children('p').text();
+		$('#deactivate-user #deactivate-user-title').text("Why do you want deactivate "+the_title+"'s Account?");
+	});
 	//------------------------------------------------------------------------------------------------------
 	//blocking functions
 	//------------------------------------------------------------------------------------------------------
+	
+	//terminating association
+	$('.table').on('click', '.terminate-association', function(){
+		var the_guardian=$(this).parent().siblings('.the-guardian').children('p').text();
+		var the_blinker=$(this).parent().siblings('.blinkers_name').text();
+		$('#terminate-association #terminate-association-title').text("What's the reason for terminating "+the_guardian+"'s and "+the_blinker+"'s Association" );
+	});
+	//terminating association
+	
+	
+	
+	//decline association
+	$('.table').on('click', '.disaprove-association', function(){
+		var the_guardian=$(this).parent().siblings('.the-guardian').children('p').text();
+		var the_blinker=$(this).parent().siblings('.blinkers_name').text();
+		$('#disaprove-association #disaprove-association-title').text("What's the reason for terminating "+the_guardian+"'s and "+the_blinker+"'s Association request" );
+	});
+	//decline association
 	
 	
 	

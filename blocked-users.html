@@ -8,15 +8,12 @@
 		
 		<link rel='icon' href='demo/img/icon_3.png' type='image/x-icon'/ >
 	
-		
 		<!--icon files-->
 		<link rel="stylesheet" href="css/icon_fonts/css/icon_set_1.css">
 		<link rel="stylesheet" href="css/icon_fonts/css/icon_set_2.css">
 		<link rel="stylesheet" href="css/icon_fonts/css/icon_set_3.css">
 		<link rel="stylesheet" href="css/icon_fonts/css/icon_set_4.css">
-	
-		<!--icon files-->
-		<link rel="stylesheet" href="vendors/OwlCarousel/assets/owl.theme.default.css">
+
 		<!-- Vendor styles -->
 		<link rel="stylesheet" href="vendors/OwlCarousel/assets/owl.carousel.min.css">
 		<link rel="stylesheet" href="vendors/OwlCarousel/assets/owl.theme.default.css">
@@ -399,12 +396,12 @@
             
 
             <section class="content custom-table-container">
-				<!--deactivate shop modal-->
-					<div class="modal fade" id="deactivate-shop" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+				<!--deactivateuser modal account-->
+					<div class="modal fade" id="deactivate-user" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 					  <div class="modal-dialog modal-dialog-centered" role="document">
 						<div class="modal-content">
 						  <div class="modal-header">
-							<h5 class="modal-title" id="deactivate-shop-title">Block guardian account</h5>
+							<h5 class="modal-title" id="deactivate-user-title">Block user account</h5>
 							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							  <span aria-hidden="true">&times;</span>
 							</button>
@@ -414,16 +411,16 @@
 								<h6 class="font-weight-bold mb-3">Whats the reason for blocking this account?</h6>
 								<div class="radio">
 									<input type="radio" name="reason" id="lost">
-									<label class="radio__label" for="lost">They are no longer a gurdian at the school</label>
+									<label class="radio__label" for="lost">They are no longer a member of the school</label>
 								</div>
 								<div class="radio">
 									<input type="radio" name="reason" id="defective">
-									<label class="radio__label" for="defective">some other reason</label>
+									<label class="radio__label" for="defective">Went against school blink policy</label>
 								</div>
 								<div class="col-lg-12 p-0 col-md-12">
 									<div class="form-group mt-3"> 
 										<label class="font-weight-bold">Write other reason</label>
-										<input type="email" class="form-control" placeholder="Enter email address">
+										<input type="text" class="form-control" placeholder="Reasons ...">
 									</div>
 								</div>					
 
@@ -436,27 +433,90 @@
 						</div>
 					  </div>
 					</div>
-				<!--deactivate shop modal-->
-				
+				<!--deactivate user modal-->
+				<!--list of my blinkers-->
+					<div class="modal fade" id="MyBlinkers" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					  <div class="modal-dialog modal-dialog-centered" role="document">
+						<div class="modal-content">
+						  <div class="modal-header">
+							<h5 class="modal-title" id="MyBlinkers_title">My list Of blinkers</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							  <span aria-hidden="true">&times;</span>
+							</button>
+						  </div>
+						  <div class="modal-body">
+							  <div class="listview listview--hover">
+									<a class="listview__item">
+										<img src="demo/img/profile-pics/1.jpg" class="listview__img" alt="">
+
+										<div class="listview__content">
+											<div class="listview__heading">Jeannette Lawson</div>
+											<p>Card is active</p>
+										</div>
+									</a>
+
+									<a class="listview__item">
+										<img src="demo/img/profile-pics/2.jpg" class="listview__img" alt="">
+
+										<div class="listview__content">
+											<div class="listview__heading">David Villa Jacobs</div>
+											<p>Card is pending</p>
+										</div>
+									</a>
+
+									<a class="listview__item">
+										<img src="demo/img/profile-pics/3.jpg" class="listview__img" alt="">
+
+										<div class="listview__content">
+											<div class="listview__heading">Candice Barnes</div>
+											<p>Has no funds</p>
+										</div>
+									</a>
+
+									<a class="listview__item">
+										<img src="demo/img/profile-pics/4.jpg" class="listview__img" alt="">
+
+										<div class="listview__content">
+											<div class="listview__heading">Darla Mckinney</div>
+											<p>Waiting for card to be processed</p>
+										</div>
+									</a>
+
+									<a class="listview__item">
+										<img src="demo/img/profile-pics/5.jpg" class="listview__img" alt="">
+
+										<div class="listview__content">
+											<div class="listview__heading">Rudolph Perez</div>
+											<p>Card deactivated</p>
+										</div>
+									</a>
+							</div>
+						  </div>
+						  <div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				<!--list of my blinkers-->
                 <header class="content__title px-0 border-0">
 				 	<div class="row">
 						<div class="col-md-8 col-sm-12">
 							<span class="rev-title-container">
-							 <h1 class="text-capitalize stream_name m-0">Registered Tusck shops</h1>
+							 <h1 class="text-capitalize stream_name m-0">Blocked users</h1>
 							</span>
 							<div class="">
 								<ol class="breadcrumb border-0">
 									<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-									<li class="breadcrumb-item active">Tuck Shops</li>
+									<li class="breadcrumb-item"><a href="#!">Users</a></li>
+									<li class="breadcrumb-item active">Blocked users</li>
 								</ol>
 							</div>
 						</div>
-						<div class="col-md-4 col-sm-12">
+						<div class="col-4 col-sm-12 col-md-4">
 							<div class="section-header">
-								<a href="#" class="btn btn-sm btn-secondary" title="">Upload  Excel</a>
-								<a href="new-shop.html" class="btn btn-sm btn-primary ml-3" title="">New Shop</a>
-							</div>
-							
+								<a href="new-user.html" class="btn btn-sm btn-primary" title="">New user</a>
+							</div>					
 						</div>						
 					</div>
                 </header
@@ -470,117 +530,109 @@
 										<thead>
 											<tr> 
 												<th></th>
-												<th>Owner details</th>
-												<th>Shops Name</th>
-												<th>Recent Transaction</th>
-												<th>Status</th>
+												<th>User's name</th>
+												<th>Date created</th>
+												<th>Date blocked</th>
+												<th>Reason for being blocked</th>
+												<th>Blocked by</th>
 												<th>Actions</th>
+
 											</tr>
 										</thead>
 										<tbody>
 											<tr>
 												<td class="w60">
 
-													<span  title="" href="#"><img class="avatar-img" src="demo/img/profile-pics/3.jpg" alt=""></span>												
+													<a title="" href="user-profile.html"><div class="avatar-char">SO</div></a>
 												</td>
-												<td>
-													<p class="mb-0">Scott Ortega</p>
+												<td class="the_user">
+													<p class="mb-0"><a href="user-profile.html"><strong>Scott Ortega</strong></a></p>
 													<a href="tel:070235689" title="">070235689</a>
 												</td>
-												<td class="shops_name">
-													<a href="shop-profile.html"><strong class="font-weight-bold">The Big shop</strong></a>
+												<td>
+													<span>22 May 2020 10:02</span>
 												</td>
+												<td><span>25 Jul 2019 12:56</span></td>
+												<td>Some really funny reason</td>
+												<td>Ms Mafuko</td>
 												<td>
-													<span>3 May 2020</span>
-												</td>												
-												<td><span class="badge badge-soft-success">Active</span></td>
-												<td>
-													<button class="btn btn-danger btn--icon-text ml-2 deactivate-shop" title="deactvate this account"  data-toggle="modal" data-target="#deactivate-shop"><i class="zmdi zmdi-block"></i> Deactivate shop</button>
-													<span class="icon_pencil-edit icon" title="Edit shop details"></span>
-													
+													<button class="btn btn-success btn--icon-text ml-2 deactivate-user" title="deactvate this account"  data-toggle="modal" data-target="#deactivate-user"><i class="zmdi zmdi-check-all"></i> Unblock Account</button>													
 												</td>
 											</tr>
 											<tr>
 												<td class="w60">
-													<span title="" href="#"><div class="avatar-char">TB</div></span>
+
+													<a title="" href="user-profile.html"><div class="avatar-char">SO</div></a>
 												</td>
-												<td>
-													<p class="mb-0">Scott Ortega</p>
+												<td class="the_user">
+													<p class="mb-0"><a href="user-profile.html"><strong>Scott Ortega</strong></a></p>
 													<a href="tel:070235689" title="">070235689</a>
 												</td>
 												<td>
-													<a href="shop-profile.html"><strong class="font-weight-bold">The Big shop</strong></a>
+													<span>22 May 2020 10:02</span>
 												</td>
+												<td><span>25 Jul 2019 12:56</span></td>
+												<td>Some really funny reason</td>
+												<td>Ms Mafuko</td>
 												<td>
-													<span>3 May 2020</span>
-												</td>												
-												<td><span class="badge badge-soft-success">Active</span></td>
-												<td>
-													<button class="btn btn-danger btn--icon-text ml-2 deactivate-shop" title="deactvate this account"  data-toggle="modal" data-target="#deactivate-shop"><i class="zmdi zmdi-block"></i> Deactivate shop</button>
-													<span class="icon_pencil-edit icon" title="Edit shop details"></span>
-													
-												</td>											</tr>
-											<tr>
-												<td class="w60">
-													<span title="" href="#"><div class="avatar-char">TB</div></span>
-												</td>
-												<td>
-													<p class="mb-0">Scott Ortega</p>
-													<a href="tel:070235689" title="">070235689</a>
-												</td>                                    
-												<td>
-													<a href="shop-profile.html"><strong class="font-weight-bold">The Big shop</strong></a>
-												</td>
-												<td>
-													<span>3 May 2020</span>
-												</td>												
-												<td><span class="badge badge-soft-success">Active</span></td>
-												<td>
-													<button class="btn btn-danger btn--icon-text ml-2 deactivate-shop" title="deactvate this account"  data-toggle="modal" data-target="#deactivate-shop"><i class="zmdi zmdi-block"></i> Deactivate shop</button>
-													<span class="icon_pencil-edit icon" title="Edit shop details"></span>
-													
+													<button class="btn btn-success btn--icon-text ml-2 deactivate-user" title="deactvate this account"  data-toggle="modal" data-target="#deactivate-user"><i class="zmdi zmdi-check-all"></i> Unblock Account</button>													
 												</td>
 											</tr>
 											<tr>
 												<td class="w60">
-													<span title="" href="#"><div class="avatar-char">TB</div></span>
+
+													<a title="" href="user-profile.html"><div class="avatar-char">SO</div></a>
 												</td>
-												<td>
-													<p class="mb-0">Scott Ortega</p>
+												<td class="the_user">
+													<p class="mb-0"><a href="user-profile.html"><strong>Scott Ortega</strong></a></p>
 													<a href="tel:070235689" title="">070235689</a>
 												</td>
 												<td>
-													<a href="shop-profile.html"><strong class="font-weight-bold">The Big shop</strong></a>
+													<span>22 May 2020 10:02</span>
 												</td>
+												<td><span>25 Jul 2019 12:56</span></td>
+												<td>Some really funny reason</td>
+												<td>Ms Mafuko</td>
 												<td>
-													<span>3 May 2020</span>
-												</td>												
-												<td><span class="badge badge-soft-danger">Inactive</span></td>
-												<td>
-													<button class="btn btn-success" title="Activate this shop">Activate shop</button>
-													<span class="icon_pencil-edit icon" title="Edit shop details"></span>
-													
+													<button class="btn btn-success btn--icon-text ml-2 deactivate-user" title="deactvate this account"  data-toggle="modal" data-target="#deactivate-user"><i class="zmdi zmdi-check-all"></i> Unblock Account</button>													
 												</td>
 											</tr>
 											<tr>
 												<td class="w60">
-													<span title="" href="#"><div class="avatar-char">TB</div></span>
+
+													<a title="" href="user-profile.html"><div class="avatar-char">SO</div></a>
 												</td>
-												<td>
-													<p class="mb-0">Scott Ortega</p>
+												<td class="the_user">
+													<p class="mb-0"><a href="user-profile.html"><strong>Scott Ortega</strong></a></p>
 													<a href="tel:070235689" title="">070235689</a>
 												</td>
 												<td>
-													<a href="shop-profile.html"><strong class="font-weight-bold">The Big shop</strong></a>
+													<span>22 May 2020 10:02</span>
+												</td>
+												<td><span>25 Jul 2019 12:56</span></td>
+												<td>Some really funny reason</td>
+												<td>Ms Mafuko</td>
+												<td>
+													<button class="btn btn-success btn--icon-text ml-2 deactivate-user" title="deactvate this account"  data-toggle="modal" data-target="#deactivate-user"><i class="zmdi zmdi-check-all"></i> Unblock Account</button>													
+												</td>
+											</tr>
+											<tr>
+												<td class="w60">
+
+													<a title="" href="user-profile.html"><div class="avatar-char">SO</div></a>
+												</td>
+												<td class="the_user">
+													<p class="mb-0"><a href="user-profile.html"><strong>Scott Ortega</strong></a></p>
+													<a href="tel:070235689" title="">070235689</a>
 												</td>
 												<td>
-													<span>3 May 2020</span>
-												</td>												
-												<td><span class="badge badge-soft-danger">Inctive</span></td>
+													<span>22 May 2020 10:02</span>
+												</td>
+												<td><span>25 Jul 2019 12:56</span></td>
+												<td>Some really funny reason</td>
+												<td>Ms Mafuko</td>
 												<td>
-													<button class="btn btn-success" title="Activate this shop">Activate shop</button>
-													<span class="icon_pencil-edit icon" title="Edit shop details"></span>
-													
+													<button class="btn btn-success btn--icon-text ml-2 deactivate-user" title="deactvate this account"  data-toggle="modal" data-target="#deactivate-user"><i class="zmdi zmdi-check-all"></i> Unblock Account</button>													
 												</td>
 											</tr>
 										</tbody>

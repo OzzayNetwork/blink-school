@@ -8,15 +8,12 @@
 		
 		<link rel='icon' href='demo/img/icon_3.png' type='image/x-icon'/ >
 	
-		
 		<!--icon files-->
 		<link rel="stylesheet" href="css/icon_fonts/css/icon_set_1.css">
 		<link rel="stylesheet" href="css/icon_fonts/css/icon_set_2.css">
 		<link rel="stylesheet" href="css/icon_fonts/css/icon_set_3.css">
 		<link rel="stylesheet" href="css/icon_fonts/css/icon_set_4.css">
-	
-		<!--icon files-->
-		<link rel="stylesheet" href="vendors/OwlCarousel/assets/owl.theme.default.css">
+
 		<!-- Vendor styles -->
 		<link rel="stylesheet" href="vendors/OwlCarousel/assets/owl.carousel.min.css">
 		<link rel="stylesheet" href="vendors/OwlCarousel/assets/owl.theme.default.css">
@@ -83,7 +80,7 @@
 
                                 <div class="listview__scroll scrollbar-inner">
                                     <a href="new-parent.html" class="listview__item">
-                                        <img src="demo/img/some-icons/parent.jpg" class="listview__img" alt="">
+                                        <img src="demo/img/profile-pics/1.jpg" class="listview__img" alt="">
                                         <div class="listview__content">
                                             <div class="listview__heading">Parents (Gurdian) Account</div>
                                             <p>Create a new parent's account</p>
@@ -91,7 +88,7 @@
                                     </a>
 
                                     <a href="new-student.html" class="listview__item">
-                                        <img src="demo/img/some-icons/student.jpg" class="listview__img" alt="">
+                                        <img src="demo/img/profile-pics/2.jpg" class="listview__img" alt="">
 
                                         <div class="listview__content">
                                             <div class="listview__heading">Student's Account (Blinker)</div>
@@ -100,7 +97,7 @@
                                     </a>
 
                                     <a href="new-shop.html" class="listview__item">
-                                        <img src="demo/img/some-icons/shop.jpg" class="listview__img" alt="">
+                                        <img src="demo/img/profile-pics/3.jpg" class="listview__img" alt="">
 
                                         <div class="listview__content">
                                             <div class="listview__heading">Tack Shop</div>
@@ -208,7 +205,7 @@
                         </div>
                     </li>
                     <li class="" >
-                        <a href="#" data-ma-action="aside-open" data-ma-target=".chat" data-toggle="tooltip" data-original-title="Associate Blinker Requests" class="top-nav__notify">
+                        <a href="new-parent.html" data-ma-action="aside-open" data-ma-target=".chat" data-toggle="tooltip" data-original-title="Associate Blinker Requests" class="top-nav__notify">
                             <i class="zmdi zmdi-accounts-add"></i>
                         </a>
                     </li>
@@ -399,196 +396,251 @@
             
 
             <section class="content custom-table-container">
-				<!--deactivate shop modal-->
-					<div class="modal fade" id="deactivate-shop" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-					  <div class="modal-dialog modal-dialog-centered" role="document">
-						<div class="modal-content">
-						  <div class="modal-header">
-							<h5 class="modal-title" id="deactivate-shop-title">Block guardian account</h5>
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							  <span aria-hidden="true">&times;</span>
-							</button>
-						  </div>
-						  <div class="modal-body">
-							<form>
-								<h6 class="font-weight-bold mb-3">Whats the reason for blocking this account?</h6>
-								<div class="radio">
-									<input type="radio" name="reason" id="lost">
-									<label class="radio__label" for="lost">They are no longer a gurdian at the school</label>
-								</div>
-								<div class="radio">
-									<input type="radio" name="reason" id="defective">
-									<label class="radio__label" for="defective">some other reason</label>
-								</div>
-								<div class="col-lg-12 p-0 col-md-12">
-									<div class="form-group mt-3"> 
-										<label class="font-weight-bold">Write other reason</label>
-										<input type="email" class="form-control" placeholder="Enter email address">
-									</div>
-								</div>					
-
-							</form>
-						  </div>
-						  <div class="modal-footer">
-							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-							<button type="button" class="btn btn-primary">Block account</button>
-						  </div>
-						</div>
-					  </div>
-					</div>
-				<!--deactivate shop modal-->
-				
                 <header class="content__title px-0 border-0">
 				 	<div class="row">
 						<div class="col-md-8 col-sm-12">
 							<span class="rev-title-container">
-							 <h1 class="text-capitalize stream_name m-0">Registered Tusck shops</h1>
+							 <h1 class="text-capitalize stream_name m-0">Blinker's Profile</h1>
 							</span>
 							<div class="">
 								<ol class="breadcrumb border-0">
 									<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-									<li class="breadcrumb-item active">Tuck Shops</li>
+									<li class="breadcrumb-item"><a href="student.html">Blinker</a></li>
+									<li class="breadcrumb-item active">Profile</li>
 								</ol>
 							</div>
 						</div>
-						<div class="col-md-4 col-sm-12">
+						<div class="col-4 col-sm-12 col-md-4">
 							<div class="section-header">
-								<a href="#" class="btn btn-sm btn-secondary" title="">Upload  Excel</a>
-								<a href="new-shop.html" class="btn btn-sm btn-primary ml-3" title="">New Shop</a>
-							</div>
-							
+								<a href="new-student.html" class="btn btn-sm btn-primary" title="">New Blinker</a>
+							</div>					
 						</div>						
 					</div>
-                </header
+				</header>
 				
 				<div class="row">
-					<div class="col-12 p-0">
+					<div class="col-12">
 						<div class="card table-custom-bg">
-							<div class="card-body">
-								<div class="table-responsive">
-									<table class="table table-hover table-custom spacing8" id="data-table">
-										<thead>
-											<tr> 
-												<th></th>
-												<th>Owner details</th>
-												<th>Shops Name</th>
-												<th>Recent Transaction</th>
-												<th>Status</th>
-												<th>Actions</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td class="w60">
-
-													<span  title="" href="#"><img class="avatar-img" src="demo/img/profile-pics/3.jpg" alt=""></span>												
-												</td>
-												<td>
-													<p class="mb-0">Scott Ortega</p>
-													<a href="tel:070235689" title="">070235689</a>
-												</td>
-												<td class="shops_name">
-													<a href="shop-profile.html"><strong class="font-weight-bold">The Big shop</strong></a>
-												</td>
-												<td>
-													<span>3 May 2020</span>
-												</td>												
-												<td><span class="badge badge-soft-success">Active</span></td>
-												<td>
-													<button class="btn btn-danger btn--icon-text ml-2 deactivate-shop" title="deactvate this account"  data-toggle="modal" data-target="#deactivate-shop"><i class="zmdi zmdi-block"></i> Deactivate shop</button>
-													<span class="icon_pencil-edit icon" title="Edit shop details"></span>
-													
-												</td>
-											</tr>
-											<tr>
-												<td class="w60">
-													<span title="" href="#"><div class="avatar-char">TB</div></span>
-												</td>
-												<td>
-													<p class="mb-0">Scott Ortega</p>
-													<a href="tel:070235689" title="">070235689</a>
-												</td>
-												<td>
-													<a href="shop-profile.html"><strong class="font-weight-bold">The Big shop</strong></a>
-												</td>
-												<td>
-													<span>3 May 2020</span>
-												</td>												
-												<td><span class="badge badge-soft-success">Active</span></td>
-												<td>
-													<button class="btn btn-danger btn--icon-text ml-2 deactivate-shop" title="deactvate this account"  data-toggle="modal" data-target="#deactivate-shop"><i class="zmdi zmdi-block"></i> Deactivate shop</button>
-													<span class="icon_pencil-edit icon" title="Edit shop details"></span>
-													
-												</td>											</tr>
-											<tr>
-												<td class="w60">
-													<span title="" href="#"><div class="avatar-char">TB</div></span>
-												</td>
-												<td>
-													<p class="mb-0">Scott Ortega</p>
-													<a href="tel:070235689" title="">070235689</a>
-												</td>                                    
-												<td>
-													<a href="shop-profile.html"><strong class="font-weight-bold">The Big shop</strong></a>
-												</td>
-												<td>
-													<span>3 May 2020</span>
-												</td>												
-												<td><span class="badge badge-soft-success">Active</span></td>
-												<td>
-													<button class="btn btn-danger btn--icon-text ml-2 deactivate-shop" title="deactvate this account"  data-toggle="modal" data-target="#deactivate-shop"><i class="zmdi zmdi-block"></i> Deactivate shop</button>
-													<span class="icon_pencil-edit icon" title="Edit shop details"></span>
-													
-												</td>
-											</tr>
-											<tr>
-												<td class="w60">
-													<span title="" href="#"><div class="avatar-char">TB</div></span>
-												</td>
-												<td>
-													<p class="mb-0">Scott Ortega</p>
-													<a href="tel:070235689" title="">070235689</a>
-												</td>
-												<td>
-													<a href="shop-profile.html"><strong class="font-weight-bold">The Big shop</strong></a>
-												</td>
-												<td>
-													<span>3 May 2020</span>
-												</td>												
-												<td><span class="badge badge-soft-danger">Inactive</span></td>
-												<td>
-													<button class="btn btn-success" title="Activate this shop">Activate shop</button>
-													<span class="icon_pencil-edit icon" title="Edit shop details"></span>
-													
-												</td>
-											</tr>
-											<tr>
-												<td class="w60">
-													<span title="" href="#"><div class="avatar-char">TB</div></span>
-												</td>
-												<td>
-													<p class="mb-0">Scott Ortega</p>
-													<a href="tel:070235689" title="">070235689</a>
-												</td>
-												<td>
-													<a href="shop-profile.html"><strong class="font-weight-bold">The Big shop</strong></a>
-												</td>
-												<td>
-													<span>3 May 2020</span>
-												</td>												
-												<td><span class="badge badge-soft-danger">Inctive</span></td>
-												<td>
-													<button class="btn btn-success" title="Activate this shop">Activate shop</button>
-													<span class="icon_pencil-edit icon" title="Edit shop details"></span>
-													
-												</td>
-											</tr>
-										</tbody>
-									</table>
+							<div class="col-12 profile-container">
+								<div class="profile__img">
+									<img src="demo/img/profile-pics/2.jpg" alt="">
+									<a href="#" class="zmdi zmdi-camera profile__img__edit"></a>
 								</div>
+								<div class="prof-details">
+									<h5 class="mb-0">Ozzay Kinotho Kimunto</h5>
+									<span>Has 12 Guardians associated with him</span>
+									<p class="mt-2">
+										<span class="badge badge-soft-success">Card is active</span>
+									</p>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					
+					<div class="col-xl-4 col-lg-4 col-md-5 col-sm-12">
+						<div class="account-info">
+							<div>
+								<h2>Account Info</h2>                            
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<small class="text-muted">Email address: </small>
+									<p>louispierce@example.com</p>                            
+									<hr>
+									<small class="text-muted">Mobile: </small>
+									<p>+ 202-222-2121</p>
+									<hr>
+									<small class="text-muted">Card status</small>
+									<p>Card is active</p>
+									<hr>
+									<small class="text-muted">Last Transaction: </small>
+									<p class="m-b-0">October 17th, 2020</p>
+									<hr>
+									<small class="text-muted">Created</small>
+									<p class="m-b-0">On October 17th, 2020 by <strong>The User</strong></p>
+									<hr>
+									<small class="text-muted">Last Edited: </small>
+									<p class="m-b-0">January 17th, 2020 by <strong>John Doe</strong></p>
+									<hr>
+									
+									<small class="text-muted">All transactions</small>
+									<p class="m-b-0">53 Transactions</p>
+									<hr>
+									<small class="text-muted">Guardian(s) </small>
+									<div class="listview listview--hover">
+										<a href="parent-profile.html" class="listview__item">
+											<img src="demo/img/profile-pics/1.jpg" class="listview__img" alt="">
+
+											<div class="listview__content">
+												<div class="listview__heading">Jeannette Lawson</div>
+												<p>0704549859</p>
+											</div>
+										</a>
+
+										<a  href="parent-profile.html" class="listview__item">
+											<img src="demo/img/profile-pics/2.jpg" class="listview__img" alt="">
+
+											<div class="listview__content">
+												<div class="listview__heading">David Villa Jacobs</div>
+												<p>0704549859</p>
+											</div>
+										</a>
+
+										<a  href="parent-profile.html" class="listview__item">
+											<img src="demo/img/profile-pics/3.jpg" class="listview__img" alt="">
+
+											<div class="listview__content">
+												<div class="listview__heading">Candice Barnes</div>
+												<p>0704548959</p>
+											</div>
+										</a>
+
+										<a  href="parent-profile.html" class="listview__item">
+											<img src="demo/img/profile-pics/4.jpg" class="listview__img" alt="">
+
+											<div class="listview__content">
+												<div class="listview__heading">Darla Mckinney</div>
+												<p>0704549859</p>
+											</div>
+										</a>
+
+										<a  href="parent-profile.html" class="listview__item">
+											<img src="demo/img/profile-pics/5.jpg" class="listview__img" alt="">
+
+											<div class="listview__content">
+												<div class="listview__heading">Rudolph Perez</div>
+												<p>0402568956</p>
+											</div>
+										</a>
+									</div>
+								</div
 							</div>
 						</div>
 					</div>
+					</div>
+						
+					<div class="col-xl-8 col-lg-8 col-md-7 col-sm-12">
+						<div class="edit-account">
+							<div>
+								<h2>Edit account</h2>                            
+							</div>
+							<div class="col-12 p-0">
+
+								<div class="card">
+									<div class="card-body">
+										<div class="row clearfix">
+											
+											<div class="col-lg-4 col-md-12">
+												<div class="form-group"> 
+													<label>Student's First name  <strong class="text-danger">*</strong></label>
+													<input type="text" class="form-control" placeholder="Enter first name" "Ozzay">
+												</div>
+											</div>
+											<div class="col-lg-5 col-md-12">
+												<div class="form-group"> 
+													<label>Other Name(s)  <strong class="text-danger">*</strong></label>
+													<input type="text" class="form-control" placeholder="Student's other name(s)" value="Kinotho Kimunto">
+												</div>
+											</div>
+											<div class="col-lg-3 col-md-12">
+												<div class="form-group">
+													<label>Student's Gender <strong class="text-danger">*</strong></label>
+													<select class="form-control">
+														<option value="">-- Select Gander --</option>
+														<option value="Male" selected>Male</option>
+														<option value="Female">Female</option>
+													</select>
+												</div>
+											</div>
+											<div class="col-lg-6 col-md-12">
+												<div class="form-group"> 
+													<label>Phone Number</label>
+													<input type="text" class="form-control" placeholder="Enter student's phone number" value="">
+												</div>
+											</div>
+											<div class="col-lg-6 col-md-12">
+												<div class="form-group"> 
+													<label>Student's Email address </label>
+													<input type="email" class="form-control" placeholder="Enter email address" value="email@enail.com">
+												</div>
+											</div>
+											
+											<div class="col-12">
+												<button class="btn btn-primary">Save changes</button>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div>
+								<h2>Transactions History</h2>                            
+							</div>
+							<div class="col-12 p-0">
+
+								<div class="card">
+									<div class="card-body">
+										<div class="table-all animated slideInRight">
+											<div class="table-responsive">
+											<table id="data-table" class="table table-striped table-hover normal-table">
+												<thead class="thead-default">
+													<tr>
+														<th>No.</th>
+													   	<th>Transaction Details</th>
+														<th>Date & Time</th>
+													</tr>
+												</thead>
+												<tfoot>
+													<tr>
+													   <th>No.</th>
+													   	<th>Transaction Details</th>
+														<th>Date & Time</th>
+													</tr>
+												</tfoot>
+												<tbody>
+													<tr>
+														<th>HGKJLl</th>
+													   	<th>Received money from <strong>The guardians name</strong></th>
+														<th>23 Feb 2020, 10:00PM</th>
+													</tr>
+													 <tr>
+														<th>KJKJ878</th>
+													   	<th>Bought some items from <strong>The Boig Shop</strong></th>
+														<th>20 Feb 2020, 10:24PM</th>
+													</tr>
+													<tr>
+														<th>HGKJLl</th>
+													   	<th>Received money from <strong>The guardians name</strong></th>
+														<th>23 Feb 2020, 10:00PM</th>
+													</tr>
+													 <tr>
+														<th>KJKJ878</th>
+													   	<th>Bought some items from <strong>The Boig Shop</strong></th>
+														<th>20 Feb 2020, 10:24PM</th>
+													</tr>
+													<tr>
+														<th>HGKJLl</th>
+													   	<th>Received money from <strong>The guardians name</strong></th>
+														<th>23 Feb 2020, 10:00PM</th>
+													</tr>
+													 <tr>
+														<th>KJKJ878</th>
+													   	<th>Bought some items from <strong>The Boig Shop</strong></th>
+														<th>20 Feb 2020, 10:24PM</th>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										</div>
+									</div>
+								</div>
+							</div>	
+						</div>					
+					</div>
+						
+					
 				</div>
                 <footer class="footer hidden-xs-down">
                     <p>Powered by<a href="https://nouveta.tech/" target="new"> Nouveta LTD</a></p>

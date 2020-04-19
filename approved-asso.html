@@ -399,12 +399,12 @@
             
 
             <section class="content custom-table-container">
-				<!--deactivate shop modal-->
-					<div class="modal fade" id="deactivate-shop" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+				<!--terminate association-->
+					<div class="modal fade" id="terminate-association" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 					  <div class="modal-dialog modal-dialog-centered" role="document">
 						<div class="modal-content">
 						  <div class="modal-header">
-							<h5 class="modal-title" id="deactivate-shop-title">Block guardian account</h5>
+							<h5 class="modal-title" id="terminate-association-title">Why terminate association?</h5>
 							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							  <span aria-hidden="true">&times;</span>
 							</button>
@@ -436,28 +436,23 @@
 						</div>
 					  </div>
 					</div>
-				<!--deactivate shop modal-->
+				<!--terminate association-->
 				
                 <header class="content__title px-0 border-0">
 				 	<div class="row">
-						<div class="col-md-8 col-sm-12">
+						<div class="col-md-12 col-sm-12">
 							<span class="rev-title-container">
-							 <h1 class="text-capitalize stream_name m-0">Registered Tusck shops</h1>
+							 <h1 class="text-capitalize stream_name m-0">Association requests</h1>
 							</span>
 							<div class="">
 								<ol class="breadcrumb border-0">
 									<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-									<li class="breadcrumb-item active">Tuck Shops</li>
+									<li class="breadcrumb-item"><a href="index.html">Associations</a></li>
+									<li class="breadcrumb-item active">Approved associations</li>
 								</ol>
 							</div>
 						</div>
-						<div class="col-md-4 col-sm-12">
-							<div class="section-header">
-								<a href="#" class="btn btn-sm btn-secondary" title="">Upload  Excel</a>
-								<a href="new-shop.html" class="btn btn-sm btn-primary ml-3" title="">New Shop</a>
-							</div>
-							
-						</div>						
+											
 					</div>
                 </header
 				
@@ -470,10 +465,11 @@
 										<thead>
 											<tr> 
 												<th></th>
-												<th>Owner details</th>
-												<th>Shops Name</th>
-												<th>Recent Transaction</th>
-												<th>Status</th>
+												<th>Guardian</th>
+												<th>Blinker</th>
+												<th>Request date</th>
+												<th>Approval Date</th>
+												<th>Approved By</th>
 												<th>Actions</th>
 											</tr>
 										</thead>
@@ -483,103 +479,118 @@
 
 													<span  title="" href="#"><img class="avatar-img" src="demo/img/profile-pics/3.jpg" alt=""></span>												
 												</td>
-												<td>
+												<td class="the-guardian">
 													<p class="mb-0">Scott Ortega</p>
 													<a href="tel:070235689" title="">070235689</a>
 												</td>
-												<td class="shops_name">
-													<a href="shop-profile.html"><strong class="font-weight-bold">The Big shop</strong></a>
+												<td class="blinkers_name">
+													Sharon Nyasia
 												</td>
 												<td>
-													<span>3 May 2020</span>
+													<span>3 May 2020 10:00</span>
 												</td>												
-												<td><span class="badge badge-soft-success">Active</span></td>
+												<td>4 May 2020 10:00</td>
 												<td>
-													<button class="btn btn-danger btn--icon-text ml-2 deactivate-shop" title="deactvate this account"  data-toggle="modal" data-target="#deactivate-shop"><i class="zmdi zmdi-block"></i> Deactivate shop</button>
-													<span class="icon_pencil-edit icon" title="Edit shop details"></span>
+													Mr Maneno
+												</td>
+												<td>
+													<button class="btn btn-danger btn--icon-text ml-2 terminate-association" title="deactvate this account"  data-toggle="modal" data-target="#terminate-association"><i class="zmdi zmdi-close"></i>Terminate Association</button>
 													
 												</td>
 											</tr>
 											<tr>
 												<td class="w60">
-													<span title="" href="#"><div class="avatar-char">TB</div></span>
+
+													<span  title="" href="#"><img class="avatar-img" src="demo/img/profile-pics/3.jpg" alt=""></span>												
 												</td>
-												<td>
+												<td class="the-guardian">
 													<p class="mb-0">Scott Ortega</p>
 													<a href="tel:070235689" title="">070235689</a>
 												</td>
-												<td>
-													<a href="shop-profile.html"><strong class="font-weight-bold">The Big shop</strong></a>
+												<td class="blinkers_name">
+													Sharon Nyasia
 												</td>
 												<td>
-													<span>3 May 2020</span>
+													<span>3 May 2020 10:00</span>
 												</td>												
-												<td><span class="badge badge-soft-success">Active</span></td>
+												<td>4 May 2020 10:00</td>
 												<td>
-													<button class="btn btn-danger btn--icon-text ml-2 deactivate-shop" title="deactvate this account"  data-toggle="modal" data-target="#deactivate-shop"><i class="zmdi zmdi-block"></i> Deactivate shop</button>
-													<span class="icon_pencil-edit icon" title="Edit shop details"></span>
-													
-												</td>											</tr>
-											<tr>
-												<td class="w60">
-													<span title="" href="#"><div class="avatar-char">TB</div></span>
+													Mr Maneno
 												</td>
 												<td>
-													<p class="mb-0">Scott Ortega</p>
-													<a href="tel:070235689" title="">070235689</a>
-												</td>                                    
-												<td>
-													<a href="shop-profile.html"><strong class="font-weight-bold">The Big shop</strong></a>
-												</td>
-												<td>
-													<span>3 May 2020</span>
-												</td>												
-												<td><span class="badge badge-soft-success">Active</span></td>
-												<td>
-													<button class="btn btn-danger btn--icon-text ml-2 deactivate-shop" title="deactvate this account"  data-toggle="modal" data-target="#deactivate-shop"><i class="zmdi zmdi-block"></i> Deactivate shop</button>
-													<span class="icon_pencil-edit icon" title="Edit shop details"></span>
+													<button class="btn btn-danger btn--icon-text ml-2 terminate-association" title="deactvate this account"  data-toggle="modal" data-target="#terminate-association"><i class="zmdi zmdi-close"></i>Terminate Association</button>
 													
 												</td>
 											</tr>
 											<tr>
 												<td class="w60">
-													<span title="" href="#"><div class="avatar-char">TB</div></span>
+
+													<span  title="" href="#"><img class="avatar-img" src="demo/img/profile-pics/3.jpg" alt=""></span>												
 												</td>
-												<td>
+												<td class="the-guardian">
 													<p class="mb-0">Scott Ortega</p>
 													<a href="tel:070235689" title="">070235689</a>
 												</td>
-												<td>
-													<a href="shop-profile.html"><strong class="font-weight-bold">The Big shop</strong></a>
+												<td class="blinkers_name">
+													Sharon Nyasia
 												</td>
 												<td>
-													<span>3 May 2020</span>
+													<span>3 May 2020 10:00</span>
 												</td>												
-												<td><span class="badge badge-soft-danger">Inactive</span></td>
+												<td>4 May 2020 10:00</td>
 												<td>
-													<button class="btn btn-success" title="Activate this shop">Activate shop</button>
-													<span class="icon_pencil-edit icon" title="Edit shop details"></span>
+													Mr Maneno
+												</td>
+												<td>
+													<button class="btn btn-danger btn--icon-text ml-2 terminate-association" title="deactvate this account"  data-toggle="modal" data-target="#terminate-association"><i class="zmdi zmdi-close"></i>Terminate Association</button>
 													
 												</td>
 											</tr>
 											<tr>
 												<td class="w60">
-													<span title="" href="#"><div class="avatar-char">TB</div></span>
+
+													<span  title="" href="#"><img class="avatar-img" src="demo/img/profile-pics/3.jpg" alt=""></span>												
 												</td>
-												<td>
+												<td class="the-guardian">
 													<p class="mb-0">Scott Ortega</p>
 													<a href="tel:070235689" title="">070235689</a>
 												</td>
-												<td>
-													<a href="shop-profile.html"><strong class="font-weight-bold">The Big shop</strong></a>
+												<td class="blinkers_name">
+													Sharon Nyasia
 												</td>
 												<td>
-													<span>3 May 2020</span>
+													<span>3 May 2020 10:00</span>
 												</td>												
-												<td><span class="badge badge-soft-danger">Inctive</span></td>
+												<td>4 May 2020 10:00</td>
 												<td>
-													<button class="btn btn-success" title="Activate this shop">Activate shop</button>
-													<span class="icon_pencil-edit icon" title="Edit shop details"></span>
+													Mr Maneno
+												</td>
+												<td>
+													<button class="btn btn-danger btn--icon-text ml-2 terminate-association" title="deactvate this account"  data-toggle="modal" data-target="#terminate-association"><i class="zmdi zmdi-close"></i>Terminate Association</button>
+													
+												</td>
+											</tr>
+											<tr>
+												<td class="w60">
+
+													<span  title="" href="#"><img class="avatar-img" src="demo/img/profile-pics/3.jpg" alt=""></span>												
+												</td>
+												<td class="the-guardian">
+													<p class="mb-0">Scott Ortega</p>
+													<a href="tel:070235689" title="">070235689</a>
+												</td>
+												<td class="blinkers_name">
+													Sharon Nyasia
+												</td>
+												<td>
+													<span>3 May 2020 10:00</span>
+												</td>												
+												<td>4 May 2020 10:00</td>
+												<td>
+													Mr Maneno
+												</td>
+												<td>
+													<button class="btn btn-danger btn--icon-text ml-2 terminate-association" title="deactvate this account"  data-toggle="modal" data-target="#terminate-association"><i class="zmdi zmdi-close"></i>Terminate Association</button>
 													
 												</td>
 											</tr>
