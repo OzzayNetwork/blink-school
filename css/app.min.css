@@ -10288,8 +10288,8 @@ opacity:1
     content: "";
     font-size: 1.4rem;
     position: absolute;
-    left: 0;
-    bottom: .3rem
+    left: 10px;
+    bottom: 2px;
 }
 .chat__search .form-control {
     padding-left: 2rem

@@ -11,6 +11,46 @@ $(window).on('load', function(){
 	});
 	
 	
+	//decline requests
+	$('.decline-btn').on('click', function(){
+		$('.modal .request-container').addClass('d-none');
+		$('.modal .decline-reason').removeClass('d-none');
+		$(this).parent().addClass('d-none');
+	});
+	
+	$('.canceldec-btn').on('click', function(){
+		$('.modal .request-container').removeClass('d-none');
+		$('.modal .decline-reason').addClass('d-none');
+		$(this).parent().parent().parent().parent().parent().parent().siblings('.modal-footer').removeClass('d-none');
+	});
+	
+	$('#associate').on('click', '.close', function(){
+		$('.modal .request-container').removeClass('d-none');
+		$('.modal .decline-reason').addClass('d-none');
+		$('#associate .modal-footer').removeClass('d-none');
+	});
+	//decline requests
+	
+	//card deactivation
+	$('.table').on('click', '.deactivator',function(){
+		var the_title=$(this).parent().siblings('.std_name').text();
+		$('#deactivate-title').text("Deactivate "+the_title+"'s Card");
+	});
+	
+	//my list of blinkers
+	$('.table').on('click', '.my_blinkers', function(){
+		var the_title=$(this).parent().siblings('.the_guardian').children('p').children('a').text();
+		$('#MyBlinkers #MyBlinkers_title').text(the_title+"'s Blinkers");
+	});
+	
+	//my list of guardians
+	$('.table').on('click', '.my_guardians', function(){
+		var the_title=$(this).parent().siblings('.the_blinkers').children('p').children('a').text();
+		$('#MyGuardians #MyGuardians_title').text(the_title+"'s Guardians");
+	});
+	
+	
+	
 //	$('.table-ranger').on('change', function(){
 //		var therange=$(this).val();
 //		alert(therange);
@@ -115,12 +155,6 @@ $(window).on('load', function(){
 	
 });
 
-$('table').on('.deactivator','click', function(){
-	alert('clicked');
-	var the_title=$(this).parent().siblings('.std_name');
-	$('#deactivate-title').text(the_title);
-	alert(the_title);
-});
 
 //owl initializer
 $(document).ready(function(){

@@ -346,24 +346,47 @@
 					</button>
 				  </div>
 				  <div class="modal-body">
-					  <div class="accounts-container">
-						<div class="blinker-prof">
-						 <a data-toggle="tooltip" title="" href="#" data-original-title="Blinker's Name"><img class="avatar-img" src="demo/img/profile-pics/2.jpg" alt=""></a>
-							<span>Blinkers Name</span>
+					 	<div class="col-12 p-0 request-container animated fadeIn">
+							 <div class="accounts-container">
+								<div class="blinker-prof">
+								 <a data-toggle="tooltip" title="" href="#" data-original-title="Blinker's Name"><img class="avatar-img" src="demo/img/profile-pics/2.jpg" alt=""></a>
+									<span>Blinkers Name</span>
+								</div>
+
+								  <img class="direction-gif" src="demo/img/gifs/associate2.gif">
+
+								  <div class="blinker-prof">
+								<a data-toggle="tooltip" title="" href="#" data-original-title="Gurdian's Name"><div class="avatar-char">GN</div></a>
+									<span>Gurdians Name</span>
+								</div>
+							  </div>
+						<!-- appears when its declined-->
+
+							<p>Associate <strong>John Doa</strong>(Blinker) to <strong>Jeannette Lawson</strong>(Gurdian) </p>
 					  	</div>
-						  
-						  <img class="direction-gif" src="demo/img/gifs/associate2.gif">
-						  
-						  <div class="blinker-prof">
-						<a data-toggle="tooltip" title="" href="#" data-original-title="Gurdian's Name"><div class="avatar-char">GN</div></a>
-							<span>Gurdians Name</span>
-					  	</div>
+					  	<div class="decline-reason animated fadeIn d-none">
+							<form>
+						  		<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<textarea class="form-control textarea-autosize" placeholder="Enter reason for declining request ..." style="overflow: hidden; overflow-wrap: break-word; height: 51px;"></textarea>
+											<i class="form-group__bar"></i>
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="modal-footer p-0">
+											<button class="btn btn-info canceldec-btn">Cancel</button>
+											<button class="btn btn-danger ">Decline</button>
+										</div>
+									</div>
+								</div>
+								
+						 	 </form>
 					  </div>
-					<p>Associate <strong>John Doa</strong>(Blinker) to <strong>Jeannette Lawson</strong>(Gurdian) </p>
 				  </div>
 				  <div class="modal-footer">
 					<button type="button" class="btn btn-primary">Approve</button>
-					<button type="button" class="btn btn-secondary">Decline</button>
+					<button class="btn btn-danger decline-btn">Decline</button>
 				  </div>
 				</div>
 			  </div>
@@ -373,6 +396,71 @@
             
 
             <section class="content custom-table-container">
+				<!--list of my guardians-->
+					<div class="modal fade" id="MyGuardians" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					  <div class="modal-dialog modal-dialog-centered" role="document">
+						<div class="modal-content">
+						  <div class="modal-header">
+							<h5 class="modal-title" id="MyGuardians_title">My list Of blinkers</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							  <span aria-hidden="true">&times;</span>
+							</button>
+						  </div>
+						  <div class="modal-body">
+							  <div class="listview listview--hover">
+									<a class="listview__item">
+										<img src="demo/img/profile-pics/1.jpg" class="listview__img" alt="">
+
+										<div class="listview__content">
+											<div class="listview__heading">Jeannette Lawson</div>
+											<p>Card is active</p>
+										</div>
+									</a>
+
+									<a class="listview__item">
+										<img src="demo/img/profile-pics/2.jpg" class="listview__img" alt="">
+
+										<div class="listview__content">
+											<div class="listview__heading">David Villa Jacobs</div>
+											<p>Card is pending</p>
+										</div>
+									</a>
+
+									<a class="listview__item">
+										<img src="demo/img/profile-pics/3.jpg" class="listview__img" alt="">
+
+										<div class="listview__content">
+											<div class="listview__heading">Candice Barnes</div>
+											<p>Has no funds</p>
+										</div>
+									</a>
+
+									<a class="listview__item">
+										<img src="demo/img/profile-pics/4.jpg" class="listview__img" alt="">
+
+										<div class="listview__content">
+											<div class="listview__heading">Darla Mckinney</div>
+											<p>Waiting for card to be processed</p>
+										</div>
+									</a>
+
+									<a class="listview__item">
+										<img src="demo/img/profile-pics/5.jpg" class="listview__img" alt="">
+
+										<div class="listview__content">
+											<div class="listview__heading">Rudolph Perez</div>
+											<p>Card deactivated</p>
+										</div>
+									</a>
+							</div>
+						  </div>
+						  <div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				<!--list of my guardians-->
                 <header class="content__title px-0 border-0">
 				 	<div class="row">
 						<div class="col-md-8 col-sm-12">
@@ -419,14 +507,14 @@
 
 													<span  title="" href="#"><img class="avatar-img" src="demo/img/profile-pics/3.jpg" alt=""></span>												
 												</td>
-												<td>
-													<p class="mb-0">Scott Ortega</p>
+												<td class="the_blinkers">
+													<p class="mb-0"><a href="student-profile" class="font-weight-bold">Scott Ortega</a></p>
 													<a href="tel:070235689" title="">ACC# 46589</a>
 												</td>
 												<td>
 													<span>22 May 2020.</span>
 												</td>
-												<td>3 Gurdians</td>
+												<td><strong class="my_guardians" data-toggle="modal" data-target="#MyGuardians">3 Gurdians</strong></td>
 												<td><span class="badge badge-soft-success">Active</span></td>
 												<td><span class="badge badge-soft-success text-uppercase">YES</span></td>
 												<td>
@@ -438,14 +526,14 @@
 												<td class="w60">
 													<span title="" href="#"><div class="avatar-char">SO</div></span>
 												</td>
-												<td>
-													<p class="mb-0">Scott Ortega</p>
+												<td class="the_blinkers">
+													<p class="mb-0"><a href="student-profile" class="font-weight-bold">Scott Ortega</a></p>
 													<a href="tel:070235689" title="">ACC# 132313</a>
 												</td>
 												<td>
 													<span>3 May 2020</span>
 												</td>
-												<td><strong>Mr Kelvin Doe</strong></td>
+												<td><strong class="my_guardians" data-toggle="modal" data-target="#MyGuardians">Mr Kelvin Doe</strong></td>
 												<td><span class="badge badge-soft-danger">Inctive</span></td>
 												<td><span class="badge badge-soft-danger text-uppercase">no</span></td>
 												<td>
@@ -459,14 +547,14 @@
 												<td class="w60">
 													<span title="" href="#"><div class="avatar-char">SO</div></span>
 												</td>
-												<td>
-													<p class="mb-0">Scott Ortega</p>
+												<td class="the_blinkers">
+													<p class="mb-0"><a href="student-profile" class="font-weight-bold">Scott Ortega</a></p>
 													<a href="tel:070235689" title="">ACC# 463366</a>
 												</td>                                    
 												<td>
 													<span>3 May 2020</span>
 												</td>
-												<td><strong>Mr Kelvin Doe</strong></td>
+												<td><strong class="my_guardians" data-toggle="modal" data-target="#MyGuardians">Mr Kelvin Doe</strong></td>
 												<td><span class="badge badge-soft-warning">Insufficient Funds</span></td>
 												<td><span class="badge badge-soft-warning text-uppercase">processing</span></td>
 												<td>
@@ -480,14 +568,14 @@
 												<td class="w60">
 													<span title="" href="#"><div class="avatar-char">SO</div></span>
 												</td>
-												<td>
-													<p class="mb-0">Scott Ortega</p>
+												<td class="the_blinkers">
+													<p class="mb-0"><a href="student-profile" class="font-weight-bold">Scott Ortega</a></p>
 													<a href="tel:070235689" title="">ACC# 465456</a>
 												</td>
 												<td>
 													<span>2 May 2020</span>
 												</td>
-												<td>15 Guardian(s)</td>
+												<td><strong class="my_guardians" data-toggle="modal" data-target="#MyGuardians">15 Guardian(s)</strong></td>
 												<td><span class="badge badge-soft-warning">Insufficient Funds</span></td>
 												<td><span class="badge badge-soft-warning text-uppercase">processing</span></td>
 												<td>
@@ -501,14 +589,14 @@
 												<td class="w60">
 													<span title="" href="#"><div class="avatar-char">SO</div></span>
 												</td>
-												<td>
-													<p class="mb-0">Scott Ortega</p>
+												<td class="the_blinkers">
+													<p class="mb-0"><a href="student-profile" class="font-weight-bold">Scott Ortega</a></p>
 													<a href="tel:070235689" title="">ACC# 5646</a>
 												</td>
 												<td>
 													<span>1 May 2020 </span>
 												</td>
-												<td>2 Guardians</td>
+												<td class="my_guardians" data-toggle="modal" data-target="#MyGuardians">2 Guardians</td>
 												<td><span class="badge badge-soft-warning">Insufficient Funds</span></td>
 												<td><span class="badge badge-soft-warning text-uppercase">processing</span></td>
 												<td>
@@ -625,12 +713,10 @@
 		<script src="js/highcharts/highcharts-more.js"></script>
 		<!--owl corousel-->
 		<script src="vendors/OwlCarousel/owl.carousel.min.js"></script>
-
-
-        <!-- App functions and actions -->
+		<!-- App functions and actions -->
+		<script src="js/wow.js"></script>
         <script src="js/app.min.js"></script>
         <script src="js/main.js"></script>		
-		
     </body>
 
 <!-- Mirrored from byrushan.com/projects/material-admin/app/2.6/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Jul 2019 11:34:43 GMT -->
