@@ -49,6 +49,35 @@ $(window).on('load', function(){
 		$('#MyGuardians #MyGuardians_title').text(the_title+"'s Guardians");
 	});
 	
+	//------------------------------------------------------------------------------------------------------
+	//blocking functions
+	//------------------------------------------------------------------------------------------------------
+	
+	//parent accounts blocking
+	$('.table').on('click', '.deactivate-parent', function(){
+		var the_title=$(this).parent().siblings('.the_guardian').children('p').children('a').text();
+		$('#deactivate-parent #deactivate-parent-title').text("Why do you want to block "+the_title+"'s Account?");
+	})
+	//parent account blocking
+	
+	//students account blocking
+	$('.table').on('click', '.deactivate-blinker', function(){
+		var the_title=$(this).parent().siblings('.the_blinkers').children('p').children('a').text();
+		$('#deactivate-blinker #deactivate-blinker-title').text("Why do you want to block "+the_title+"'s Account?");
+	});
+	//students account blocking
+	
+	//deactivating shop
+	
+	$('.table').on('click', '.deactivate-shop', function(){
+		var the_title=$(this).parent().siblings('.shops_name').text();
+		$('#deactivate-shop #deactivate-shop-title').text("Why do you want deactivate "+the_title+"'s shop?");
+	});
+	//deactivating shop
+	//------------------------------------------------------------------------------------------------------
+	//blocking functions
+	//------------------------------------------------------------------------------------------------------
+	
 	
 	
 //	$('.table-ranger').on('change', function(){

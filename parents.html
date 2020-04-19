@@ -396,6 +396,44 @@
             
 
             <section class="content custom-table-container">
+				<!--deactivate account-->
+					<div class="modal fade" id="deactivate-parent" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					  <div class="modal-dialog modal-dialog-centered" role="document">
+						<div class="modal-content">
+						  <div class="modal-header">
+							<h5 class="modal-title" id="deactivate-parent-title">Block guardian account</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							  <span aria-hidden="true">&times;</span>
+							</button>
+						  </div>
+						  <div class="modal-body">
+							<form>
+								<h6 class="font-weight-bold mb-3">Whats the reason for blocking this account?</h6>
+								<div class="radio">
+									<input type="radio" name="reason" id="lost">
+									<label class="radio__label" for="lost">They are no longer a gurdian at the school</label>
+								</div>
+								<div class="radio">
+									<input type="radio" name="reason" id="defective">
+									<label class="radio__label" for="defective">some other reason</label>
+								</div>
+								<div class="col-lg-12 p-0 col-md-12">
+									<div class="form-group mt-3"> 
+										<label class="font-weight-bold">Write other reason</label>
+										<input type="email" class="form-control" placeholder="Enter email address">
+									</div>
+								</div>					
+
+							</form>
+						  </div>
+						  <div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Block account</button>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				<!--deactivate account modal-->
 				<!--list of my blinkers-->
 					<div class="modal fade" id="MyBlinkers" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 					  <div class="modal-dialog modal-dialog-centered" role="document">
@@ -519,8 +557,8 @@
 												<td><strong class="my_blinkers" data-toggle="modal" data-target="#MyBlinkers">4 Student(s)</strong></td>
 												<td><span class="badge badge-soft-success">Active</span></td>
 												<td>
-													<span class="icon_pencil-edit icon" title="Edit shop details"></span>
-													<span class="pe-7s-trash icon" title="Delete the account"></span>
+													<span class="icon_pencil-edit icon mr-3" title="Edit shop details"></span>
+													<button class="btn btn-danger btn--icon-text ml-2 deactivate-parent" title="deactvate this account"  data-toggle="modal" data-target="#deactivate-parent"><i class="zmdi zmdi-block"></i> Block Account</button>													
 												</td>
 											</tr>
 											<tr>
@@ -540,7 +578,7 @@
 												<td><span class="badge badge-soft-success">Active</span></td>
 												<td>
 													<span class="icon_pencil-edit icon" title="Edit shop details"></span>
-													<span class="pe-7s-trash icon" title="Delete the account"></span>
+													<button class="btn btn-danger btn--icon-text ml-2 deactivate-parent" title="deactvate this account"  data-toggle="modal" data-target="#deactivate-parent"><i class="zmdi zmdi-block"></i> Block Account</button>
 												</td>
 											</tr>
 											<tr>
@@ -561,7 +599,7 @@
 												<td>
 													<button class="btn btn-success" title="send activation request">Activation Request</button>
 													<span class="icon_pencil-edit icon" title="Edit shop details"></span>
-													<span class="pe-7s-trash icon" title="Delete the account"></span>
+													<button class="btn btn-danger btn--icon-text ml-2 deactivate-parent" title="deactvate this account"  data-toggle="modal" data-target="#deactivate-parent"><i class="zmdi zmdi-block"></i> Block Account</button>
 												</td>
 											</tr>
 											<tr>
@@ -582,7 +620,7 @@
 												<td>
 													<button class="btn btn-success" title="send activation request">Activation Request</button>
 													<span class="icon_pencil-edit icon" title="Edit shop details"></span>
-													<span class="pe-7s-trash icon" title="Delete the account"></span>
+													<button class="btn btn-danger btn--icon-text ml-2 deactivate-parent" title="deactvate this account"  data-toggle="modal" data-target="#deactivate-parent"><i class="zmdi zmdi-block"></i> Block Account</button>
 												</td>
 											</tr>
 											<tr>
@@ -603,7 +641,7 @@
 												<td>
 													<button class="btn btn-success" title="send activation Request">Activation Request</button>
 													<span class="icon_pencil-edit icon" title="Edit shop details"></span>
-													<span class="pe-7s-trash icon" title="Delete the account"></span>
+													<button class="btn btn-danger btn--icon-text ml-2 deactivate-parent" title="deactvate this account"  data-toggle="modal" data-target="#deactivate-parent"><i class="zmdi zmdi-block"></i> Block Account</button>
 												</td>
 											</tr>
 										</tbody>
