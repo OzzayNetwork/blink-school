@@ -75,7 +75,7 @@ $(document).ready(function () {
             type: 'bullet',
             targetColor: '#fff',
             performanceColor: '#0553A1',
-            rangeColors: ['#ff6b68', '#fc7f7d', '#fc918f'],
+            rangeColors: ['#dc3545', '#fc7f7d', '#fc918f'],
             width: '100%',
             height: 50
         });
@@ -86,7 +86,7 @@ $(document).ready(function () {
         $('.sparkline-pie').sparkline('html', {
             type: 'pie',
             height: 50,
-            sliceColors: ['#f5c942', '#ff6b68', '#0553A1', '#32c787']
+            sliceColors: ['#f5c942', '#dc3545', '#0553A1', '#32c787']
         });
     }
 

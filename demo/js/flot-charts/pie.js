@@ -3,7 +3,7 @@
 $(document).ready(function(){
     // Make some sample data
     var pieData = [
-        {data: 1, color: '#ff6b68', label: 'Toyota'},
+        {data: 1, color: '#dc3545', label: 'Toyota'},
         {data: 2, color: '#0553A1', label: 'Nissan'},
         {data: 3, color: '#32c787', label: 'Hyundai'},
         {data: 4, color: '#f5c942', label: 'Scion'},

@@ -35,13 +35,13 @@ $(document).ready(function(){
     var dynamicChartOptions = {
         series: {
             label: "Server Process Data",
-            color: '#ff6b68',
+            color: '#dc3545',
             lines: {
                 show: true,
                 lineWidth: 0.2,
                 fill: 0.6,
                 fillColor: {
-                    colors: ['rgba(255,255,255,255)', '#ff6b68']
+                    colors: ['rgba(255,255,255,255)', '#dc3545']
                 }
             },
             shadowSize: 0

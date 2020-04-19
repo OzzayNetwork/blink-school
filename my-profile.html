@@ -226,8 +226,8 @@
                         </div>
 
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">View Profile</a>
-                            <a class="dropdown-item" href="#">Settings</a>
+                            <a class="dropdown-item" href="my-profile.html">View Profile</a>
+                            <a class="dropdown-item d-none" href="#">Settings</a>
                             <a class="dropdown-item" href="landing-page.html">Logout</a>
                         </div>
                     </div>
@@ -237,6 +237,14 @@
 						<li class="navigation__active"><a href="student.html"><i class="zmdi zmdi-face "></i>Students</a></li>
 						<li class="navigation__active"><a href="parents.html"><i class="zmdi zmdi-accounts-alt "></i>Parents</a></li>
 						<li class="navigation__active"><a href="shop.html"><i class="zmdi zmdi-store "></i>Shops</a></li>
+						 <li class="navigation__sub">
+                            <a href="#"><i class="zmdi zmdi-accounts-add"></i>Associations</a>
+                            <ul>
+                                <li><a href="associations.html">Requests</a></li>
+                                <li><a href="approved-asso.html">Approved</a></li>
+                                <li><a href="declined-asso.html">Declined</a></li>
+                            </ul>
+						</li>
                         <li class="navigation__sub">
                             <a href="#"><i class="zmdi zmdi-card"></i>Cards</a>
                             <ul>
@@ -246,16 +254,15 @@
                                 <li><a href="deactivated-cards.html">Deactivated cards</a></li>
                             </ul>
 						</li>
-						<li class="navigation__active"><a href="shop.html"><i class="zmdi zmdi-accounts-add "></i>Association requests</a></li>
-						<li class="navigation__active"><a href="shop.html"><i class="zmdi zmdi-hourglass-alt"></i>Transactions reports</a></li>
+						<li class="navigation__active"><a href="transactions.html"><i class="zmdi zmdi-hourglass-alt"></i>Transactions reports</a></li>
 						 <li class="navigation__sub">
                             <a href="#"><i class="zmdi zmdi-account"></i>Systems Users</a>
 
                             <ul>
-                                <li><a href="#">Add a user</a></li>
-                                <li><a href="#">Remove a user</a></li>
-                                <li><a href="#">View list of users</a></li>
-                                <li><a href="#">Add roles</a></li>
+								<li><a href="new-user.html">New User</a></li>
+								<li><a href="active-users.html">Active users</a></li>
+                                <li><a href="blocked-users.html">Blocked Users</a></li>
+                                
                             </ul>
                         </li>
 						 <li class="navigation__active mt-4"><a href="landing-page.html"><i class="zmdi zmdi-power"></i>Logout</a></li>
@@ -398,23 +405,18 @@
             <section class="content custom-table-container">
                 <header class="content__title px-0 border-0">
 				 	<div class="row">
-						<div class="col-md-8 col-sm-12">
+						<div class="col-md-12 col-sm-12">
 							<span class="rev-title-container">
-							 <h1 class="text-capitalize stream_name m-0">Blinker's Profile</h1>
+							 <h1 class="text-capitalize stream_name m-0">User's Profile</h1>
 							</span>
 							<div class="">
 								<ol class="breadcrumb border-0">
 									<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-									<li class="breadcrumb-item"><a href="student.html">Blinker</a></li>
-									<li class="breadcrumb-item active">Profile</li>
+									<li class="breadcrumb-item active">My profile</li>
 								</ol>
 							</div>
 						</div>
-						<div class="col-4 col-sm-12 col-md-4">
-							<div class="section-header">
-								<a href="new-student.html" class="btn btn-sm btn-primary" title="">New Blinker</a>
-							</div>					
-						</div>						
+												
 					</div>
 				</header>
 				
@@ -428,10 +430,8 @@
 								</div>
 								<div class="prof-details">
 									<h5 class="mb-0">Ozzay Kinotho Kimunto</h5>
-									<span>Has 12 Guardians associated with him</span>
-									<p class="mt-2">
-										<span class="badge badge-soft-success">Card is active</span>
-									</p>
+									<span>0702568956</span>
+									
 								</div>
 							</div>
 							
@@ -451,10 +451,8 @@
 									<small class="text-muted">Mobile: </small>
 									<p>+ 202-222-2121</p>
 									<hr>
-									<small class="text-muted">Card status</small>
-									<p>Card is active</p>
-									<hr>
-									<small class="text-muted">Last Transaction: </small>
+									
+									<small class="text-muted">Last seen: </small>
 									<p class="m-b-0">October 17th, 2020</p>
 									<hr>
 									<small class="text-muted">Created</small>
@@ -463,57 +461,6 @@
 									<small class="text-muted">Last Edited: </small>
 									<p class="m-b-0">January 17th, 2020 by <strong>John Doe</strong></p>
 									<hr>
-									
-									<small class="text-muted">All transactions</small>
-									<p class="m-b-0">53 Transactions</p>
-									<hr>
-									<small class="text-muted">Guardian(s) </small>
-									<div class="listview listview--hover">
-										<a href="parent-profile.html" class="listview__item">
-											<img src="demo/img/profile-pics/1.jpg" class="listview__img" alt="">
-
-											<div class="listview__content">
-												<div class="listview__heading">Jeannette Lawson</div>
-												<p>0704549859</p>
-											</div>
-										</a>
-
-										<a  href="parent-profile.html" class="listview__item">
-											<img src="demo/img/profile-pics/2.jpg" class="listview__img" alt="">
-
-											<div class="listview__content">
-												<div class="listview__heading">David Villa Jacobs</div>
-												<p>0704549859</p>
-											</div>
-										</a>
-
-										<a  href="parent-profile.html" class="listview__item">
-											<img src="demo/img/profile-pics/3.jpg" class="listview__img" alt="">
-
-											<div class="listview__content">
-												<div class="listview__heading">Candice Barnes</div>
-												<p>0704548959</p>
-											</div>
-										</a>
-
-										<a  href="parent-profile.html" class="listview__item">
-											<img src="demo/img/profile-pics/4.jpg" class="listview__img" alt="">
-
-											<div class="listview__content">
-												<div class="listview__heading">Darla Mckinney</div>
-												<p>0704549859</p>
-											</div>
-										</a>
-
-										<a  href="parent-profile.html" class="listview__item">
-											<img src="demo/img/profile-pics/5.jpg" class="listview__img" alt="">
-
-											<div class="listview__content">
-												<div class="listview__heading">Rudolph Perez</div>
-												<p>0402568956</p>
-											</div>
-										</a>
-									</div>
 								</div
 							</div>
 						</div>
@@ -533,44 +480,78 @@
 											
 											<div class="col-lg-4 col-md-12">
 												<div class="form-group"> 
-													<label>Student's First name  <strong class="text-danger">*</strong></label>
-													<input type="text" class="form-control" placeholder="Enter first name" "Ozzay">
+													<label>irst name  <strong class="text-danger">*</strong></label>
+													<input type="text" class="form-control" placeholder="Enter first name">
 												</div>
 											</div>
 											<div class="col-lg-5 col-md-12">
 												<div class="form-group"> 
 													<label>Other Name(s)  <strong class="text-danger">*</strong></label>
-													<input type="text" class="form-control" placeholder="Student's other name(s)" value="Kinotho Kimunto">
+													<input type="text" class="form-control" placeholder="Enter other name(s)">
 												</div>
 											</div>
 											<div class="col-lg-3 col-md-12">
 												<div class="form-group">
-													<label>Student's Gender <strong class="text-danger">*</strong></label>
+													<label>User's Gender <strong class="text-danger">*</strong></label>
 													<select class="form-control">
 														<option value="">-- Select Gander --</option>
-														<option value="Male" selected>Male</option>
+														<option value="Male">Male</option>
 														<option value="Female">Female</option>
 													</select>
 												</div>
 											</div>
 											<div class="col-lg-6 col-md-12">
 												<div class="form-group"> 
-													<label>Phone Number</label>
-													<input type="text" class="form-control" placeholder="Enter student's phone number" value="">
+													<label>Phone Number  <strong class="text-danger">*</strong></label>
+													<input type="text" class="form-control" placeholder="Enter user's phone number">
 												</div>
 											</div>
 											<div class="col-lg-6 col-md-12">
 												<div class="form-group"> 
-													<label>Student's Email address </label>
-													<input type="email" class="form-control" placeholder="Enter email address" value="email@enail.com">
+													<label>User's Email address  <strong class="text-danger">*</strong></label>
+													<input type="email" class="form-control" placeholder="Enter email address">
 												</div>
 											</div>
 											
 											<div class="col-12">
-												<button class="btn btn-primary">Save changes</button>
+												<button class="btn btn-primary">Add User</button>
 											</div>
 											
 										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 p-0">
+								<div class="card">
+									<div class="card-body">
+										<form class="row">
+											<div class="col-12">
+												<p class="font-weight-bold">Change pasword</p>
+											</div>
+											<div class="col-lg-6 col-md-12">
+												<div class="form-group"> 
+													<label>Pravious password <strong class="text-danger">*</strong></label>
+													<input type="password" class="form-control" placeholder="Enter your previous password" value="my password">
+												</div>
+											</div>
+											
+											<div class="col-lg-6 col-md-12">
+												<div class="form-group"> 
+													<label>New password <strong class="text-danger">*</strong></label>
+													<input type="password" class="form-control" placeholder="Enter your new previous password">
+												</div>
+											</div>
+											<div class="col-lg-6 col-md-12">
+												<div class="form-group"> 
+													<label>Confirm password <strong class="text-danger">*</strong></label>
+													<input type="password" class="form-control" placeholder="confirm your new previous password" >
+												</div>
+											</div>
+											<div class="col-12">
+												<button class="btn btn-primary">Change password</button>
+											</div>
+										</form>
+									
 									</div>
 								</div>
 							</div>
@@ -602,28 +583,23 @@
 												<tbody>
 													<tr>
 														<th>HGKJLl</th>
-													   	<th>Received money from <strong>The guardians name</strong></th>
+													   	<th>Created a guardian account for <strong>The guardians name</strong></th>
 														<th>23 Feb 2020, 10:00PM</th>
 													</tr>
 													 <tr>
 														<th>KJKJ878</th>
-													   	<th>Bought some items from <strong>The Boig Shop</strong></th>
+													   	<th>Blocked a blink account for <strong>45661</strong></th>
 														<th>20 Feb 2020, 10:24PM</th>
 													</tr>
 													<tr>
 														<th>HGKJLl</th>
-													   	<th>Received money from <strong>The guardians name</strong></th>
+													   	<th>Created a guardian account for <strong>The guardians name</strong></th>
 														<th>23 Feb 2020, 10:00PM</th>
 													</tr>
 													 <tr>
 														<th>KJKJ878</th>
-													   	<th>Bought some items from <strong>The Boig Shop</strong></th>
+													   	<th>Blocked a blink account for <strong>45661</strong></th>
 														<th>20 Feb 2020, 10:24PM</th>
-													</tr>
-													<tr>
-														<th>HGKJLl</th>
-													   	<th>Received money from <strong>The guardians name</strong></th>
-														<th>23 Feb 2020, 10:00PM</th>
 													</tr>
 													 <tr>
 														<th>KJKJ878</th>
